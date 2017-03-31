@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  {% if page.image %}
+    <img src="assets/events/{{page.image}}"/>
+  {% endif %}
+
+  {% if page.description %}
+    <h2>{{page.description}}</h2>
+  {% endif %}
+
+  {% if page.date %}
+    <h3>{{page.date | date_to_string }}<h3>
+  {% endif %}
+
+  {% if page.address %}
+    <h3>{{page.address}}</h3>
+  {% endif %}
+
+  {% if page.rsvp %}
+    <h3><a href="{{page.rsvp}}">RSVP</a></h3>
+  {% endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
