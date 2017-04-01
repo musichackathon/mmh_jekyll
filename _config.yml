@@ -25,6 +25,8 @@ facebook_url: musichackathon
 email_list_signup_url: "http://monthlymusichackathon.us5.list-manage1.com/subscribe?u=498e6061a6f7a0ca8bf5da9f8&id=30b00385af"
 eventbrite_url: "https://www.eventbrite.com/o/monthly-music-hackathon-nyc-2470452960"
 timezone: America/New_York
+date_format: "%b %-d, %Y"
+time_format: "%I:%M %P"
 future: true
 
 # Build settings
@@ -46,6 +48,6 @@ defaults:
 collections:
   events:
     output: true
-    permalink: /:year-:month-:day-:title.html
+    permalink: /:year-:month-:day.html
   posts:
     permalink: /:year-:month-:day-:title.html
