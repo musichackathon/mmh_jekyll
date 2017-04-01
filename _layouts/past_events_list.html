@@ -22,10 +22,7 @@ layout: default
         {% assign date = currentDate %}
       {% endif %}
         <li>
-          <span class="post-meta">{{ event.date | date: site.date_format }}</span>
-          <h2>
-            <a class="post-link" href="{{ event.url | relative_url }}">{{ event.title | escape }}</a>
-          </h2>
+          {% include event_list_item.html event=event %}
         </li>
       {% if forloop.last %}
         </ul>

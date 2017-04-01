@@ -12,10 +12,7 @@ layout: default
     {% assign futureEvents = (site.events | where_exp:"event", "event.date >= site.time") | sort 'date' %}
     {% for event in futureEvents %}
       <li>
-        <span class="post-meta">{{ event.date | date: site.date_format }}</span>
-        <h2>
-          <a class="post-link" href="{{ event.url | relative_url }}">{{ event.title | escape }}</a>
-        </h2>
+        {% include event_list_item.html event=event %}
       </li>
     {% endfor %}
   </ul>
