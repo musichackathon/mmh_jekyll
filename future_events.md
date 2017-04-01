@@ -1,5 +1,5 @@
 ---
 title: Future Events
-layout: events_list
+layout: future_events_list
 navigation_order: 1
 ---

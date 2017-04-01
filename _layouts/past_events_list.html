@@ -9,18 +9,20 @@ layout: default
   {{ content }}
 
   <ul class="post-list">
-    {% for event in site.events | sort 'title' | reverse %}
-      {% assign currentdate = event.date | date: "%Y" %}
-      {% if currentdate != date %}
+    {% assign pastEvents = ((site.events | where_exp:"event", "event.date <= site.time") | sort: 'date') | reverse %}
+
+    {% for event in pastEvents %}
+      {% assign currentDate = event.date | date: "%Y" %}
+      {% if currentDate != date %}
         {% unless forloop.first %}
           </ul>
         {% endunless %}
-        <h1 class="page-heading">{{ currentdate }}</h1>
+        <h1 class="page-heading">{{ currentDate }}</h1>
         <ul class="post-list">
-        {% assign date = currentdate %}
+        {% assign date = currentDate %}
       {% endif %}
         <li>
-          <span class="post-meta">{{ event.date | date: "%b %-d, %Y" }}</span>
+          <span class="post-meta">{{ event.date | date: site.date_format }}</span>
           <h2>
             <a class="post-link" href="{{ event.url | relative_url }}">{{ event.title | escape }}</a>
           </h2>
@@ -30,7 +32,5 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>
