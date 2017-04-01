@@ -16,7 +16,8 @@ layout: default
   {% endif %}
 
   {% if page.date %}
-    <h3>{{page.date | date_to_string }}<h3>
+    <h3>{{page.date | date: site.date_format }}</h3>
+    <h3>{{page.date | date: site.time_format }}</h3>
   {% endif %}
 
   {% if page.address %}
