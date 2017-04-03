@@ -1,3 +1,3 @@
 # Demonstration of Jekyll for Monthly Music Hackathon
 
-Website can be seen at http://trevorknight.github.io/mmh
+Website can be seen at http://musichackathon.github.io/mmh_jekyll
