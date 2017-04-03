@@ -8,26 +8,19 @@ layout: default
   
   {{ content }}
 
-  <ul class="post-list">
-    {% assign pastEvents = ((site.events | where_exp:"event", "event.date <= site.time") | sort: 'date') | reverse %}
+  {% assign pastEventsByYear =
+      ((site.events | where_exp:"event", "event.date <= site.time") | group_by_exp:"event", "event.date | date: '%Y'")
+          | sort: 'name' | reverse %}
 
-    {% for event in pastEvents %}
-      {% assign currentDate = event.date | date: "%Y" %}
-      {% if currentDate != date %}
-        {% unless forloop.first %}
-          </ul>
-        {% endunless %}
-        <h1 class="page-heading">{{ currentDate }}</h1>
-        <ul class="post-list">
-        {% assign date = currentDate %}
-      {% endif %}
-        <li>
-          {% include event_list_item.html event=event %}
-        </li>
-      {% if forloop.last %}
-        </ul>
-      {% endif %}
-    {% endfor %}
-  </ul>
-
+  {% for year in pastEventsByYear %}
+    <h1 class="page-heading">{{ year.name }}</h1>
+      <ul class="post-list">
+        {% assign events = year.items | reverse %}
+        {% for event in events %}
+          <li>
+            {% include event_list_item.html event=event %}
+          </li>
+        {% endfor %}
+      </ul>
+  {% endfor %}
 </div>
