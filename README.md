@@ -15,12 +15,16 @@ There are a few basic steps that will be common to any website change:
 
 A more detailed description of that process can be found in the [Understanding the GitHub Flow Guide](https://guides.github.com/introduction/flow/).
 
-## Small changes
+## For small changes
 
-For small changes (such as updating this README.md), the whole thing can be done on github.com without leaving the browser:
+For small changes (such as updating this README.md or updating an event), the whole thing can be done on github.com without leaving the browser. 
+
+To create a branch, make changes, and create a pull request:
 
 1. Browse to the file
 2. Click the pencil icon to edit the file and make your changes
 3. In the 'Commit changes box' add [an appropriate title and description](https://github.com/blog/926-shiny-new-commit-styles).
 4. *IMPORTANT*: Be sure to select the option "Create a new branch for this commit and start a pull request."
 5. Click "Propose file change".
+6. On the next screen, add one or more appropriate reviewers.
+7. Click 'Create pull request'.
