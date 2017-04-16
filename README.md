@@ -36,11 +36,11 @@ request."
 ## To add a new event
 
 The process to add a new event is similar to the process for making a small change and can also
-complete be done in the browser.
+completely be done in the browser.
 
 1. Browse to the _events directory.
 2. Open template.md and select and copy the contents.
-3. Back in the _events directory, clic, "Create a new file".
+3. Back in the _events directory, click, "Create a new file".
 4. Paste the template into the new file.
 5. Remove the first line of the ["front matter"](https://jekyllrb.com/docs/frontmatter/), the one
 that says, "published: false".
