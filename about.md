@@ -117,11 +117,10 @@ Yes! If you want to help decide what the future of Monthly Music Hackathon NYC w
 
 For more info, contact:
 
-Jonathan Marmor
+Monthly Music Hackathon NYC
 
-[jmarmor@gmail.com](mailto:jmarmor@gmail.com)
+[musichackathon@gmail.com](mailto:musichackathon@gmail.com)
 
-[@jonathanmarmor](https://twitter.com/jonathanmarmor)
+[@musichackathon](https://twitter.com/musichackathon)
 
 Significant guidance on the planning of the launch of this event series in 2012 was provided by Jessica Thompson, Trevor Knight (both of whom organized the amazing Montreal Musitk hackathon), Ari Russo, and the staff of exfm: Dan Kantor, Marshall Jones, Lucas Hrabovsky, Kirk Love, Jessica Page, and Joe Kanakaraj.
-
