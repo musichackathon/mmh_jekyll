@@ -18,12 +18,17 @@
   position: relative;
   top: 12px;
   left: 0;
+  width: 85%;
 
   @include media-query($on-palm) {
     top: 10px;
   }
+  @include media-query($on-largePhone) {
+    width: 90%;
+  }
   @include media-query($on-smallPhone) {
     top: 8px;
+    width: 100%;
   }
 }
 .site-logo {
@@ -46,9 +51,11 @@
   line-height: 40px;
   letter-spacing: -1px;
 
-  @include media-query($on-palm) {
-    font-size: 51px;
-    line-height: 23px;
+  @media screen and (max-width: 640px) {
+    font-size: 60px;
+  }
+  @media screen and (max-width: 580px) {
+    font-size: 56px;
   }
   @include media-query($on-largePhone) {
     font-size: 49px;
@@ -90,10 +97,34 @@
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 16px;
+
+      @include media-query($on-palm) {
+        margin-right: 0px;
+      }
     }
   }
 
   @include media-query($on-palm) {
+    .trigger {
+      width: 110px;
+      bottom: 85px;
+    }
+    .page-link {
+      display: block;
+      text-align: right;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .trigger {
+      bottom: 80px;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    .trigger {
+      bottom: 80px;
+    }
+  }
+  @include media-query($on-largePhone) {
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
