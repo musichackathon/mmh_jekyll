@@ -23,9 +23,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 
-$on-smallPhone:    380px;
-$on-largePhone:    540px;
-$on-palm:          760px;
+$on-palm:          570px;
 $on-laptop:        800px;
 
 // Minima also includes a mixin for defining media queries.
@@ -37,5 +35,5 @@ $on-laptop:        800px;
 //     }
 // }
 
-// Import partials from the `minima` theme.
-@import "minima";
+// Import mmh files
+@import "mmh";
