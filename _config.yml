@@ -29,7 +29,9 @@ timezone: America/New_York
 date_format: "%b %-d, %Y"
 time_format: "%I:%M %P"
 future: true
-rss_feed: <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" title="Latest 3 MMH blog posts" />
+#rss_limit: 3
+#rss_feed: <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" title="Latest 3 MMH blog posts" />
+#rss_url: "http://monthlymusichackathon.org/feed.xml"
 
 # Build settings
 markdown: kramdown

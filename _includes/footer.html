@@ -17,13 +17,13 @@
             {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
+            <li class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
+            </li>
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
-          <li>[Subscribe]{{site.rss_feed}}
-          </li>
           {% if site.email_list_signup_url %}
           <li>
             {% include icon-empty.html url=site.email_list_signup_url text="Email list" %}
