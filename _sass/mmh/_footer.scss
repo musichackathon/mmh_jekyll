@@ -28,7 +28,6 @@
   float: left;
   padding-left: $spacing-unit / 2;
 
-
   @include media-query($on-largePhone) {
     margin-bottom: $spacing-unit / 2;
   }
@@ -45,6 +44,11 @@
   }
 }
 
+.footer-col-3 {
+  width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+  width:         calc(100% - (#{$spacing-unit} / 2));
+}
+
 
 @media screen and (min-width: 700px) {
   .footer-col-1 {
@@ -55,14 +59,7 @@
     width: -webkit-calc(155px - (#{$spacing-unit} / 2));
     width:         calc(155px - (#{$spacing-unit} / 2));
   }
-}
-
-
-.footer-col-3 {
-  width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-  width:         calc(100% - (#{$spacing-unit} / 2));
-
-  @include media-query(700px) {
+  .footer-col-3 {
     width: -webkit-calc(100% - 375px - (#{$spacing-unit} / 2));
     width:         calc(100% - 375px - (#{$spacing-unit} / 2));
   }
