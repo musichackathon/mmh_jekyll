@@ -19,7 +19,9 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 // Width of the content area
 $content-width:    800px !default;
 
-$on-palm:          600px !default;
+$on-smallPhone:    380px !default;
+$on-largePhone:    450px !default;
+$on-palm:          570px !default;
 $on-laptop:        800px !default;
 
 // Use media queries like this:
@@ -30,13 +32,14 @@ $on-laptop:        800px !default;
 //   }
 // }
 @mixin media-query($device) {
-  @media screen and (max-width: $device) {
+  @media screen and (min-width: $device) {
     @content;
   }
 }
 
 // Import partials.
 @import
-  "minima/base",
-  "minima/layout"
+  "mmh/base",
+  "mmh/header",
+  "mmh/layout"
 ;
