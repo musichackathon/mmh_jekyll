@@ -17,7 +17,7 @@ layout: default
 
   {% if page.days %}
     {% for day in page.days %}
-        <h3>{{day.day | date: site.date_format }} {{day.start | date: site.time_format}} - {{day.end | date: site.time_format}}</h3>
+        <h3>{{day.day | date: site.date_format }} {{day.start | date: site.time_format}}–{{day.end | date: site.time_format}}</h3>
     {% endfor %}
   {% elsif page.date %}
     <h3>{{page.date | date: site.date_format }}</h3>
