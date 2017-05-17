@@ -57,4 +57,4 @@ collections:
     permalink: /:year-:month-:day-:title.html
   resources:
     output: true
-    permalink: /:title.html
+    permalink: /:collection/:name/

@@ -1,6 +1,7 @@
 ---
 layout: resources_list
 title: "Resources"
+permalink: /resources/
 navigation_order: 3
 ---
 
