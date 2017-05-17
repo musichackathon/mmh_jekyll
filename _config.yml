@@ -43,6 +43,11 @@ defaults:
       type: events
     values:
       layout: event
+  - scope:
+      path: ""
+      type: resources
+    values:
+      layout: resource
 
 collections:
   events:
@@ -50,3 +55,6 @@ collections:
     permalink: /:year-:month-:day.html
   posts:
     permalink: /:year-:month-:day-:title.html
+  resources:
+    output: true
+    permalink: /:title.html
