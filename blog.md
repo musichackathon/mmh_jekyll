@@ -1,5 +1,5 @@
 ---
 title: Blog
 layout: blog
-navigation_order: 3
+navigation_order: 4
 ---
