@@ -14,7 +14,7 @@
 .page-col-5,
 .page-col-4 {
   width: 100%;
-  padding: 2% 3% 2% 3%;
+  padding: 3% 4% 3% 4%;
 }
 
 @media screen and (min-width: $on-palm) {
@@ -131,8 +131,4 @@ img.center {
     }
   }
 
-  @include media-query($on-palm) {
-    padding-left: calc((100% - (#{$content-width} - 100px))/2);
-    padding-right: calc((100% - (#{$content-width} - 100px))/2);;
-  }
 }
