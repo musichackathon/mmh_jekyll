@@ -53,9 +53,9 @@ defaults:
 collections:
   events:
     output: true
-    permalink: /:year-:month-:day.html
+    permalink: /:year-:month-:day
   posts:
-    permalink: /:year-:month-:day-:title.html
+    permalink: /:year-:month-:day-:title
   resources:
     output: true
     permalink: /:collection/:name/
