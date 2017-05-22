@@ -31,16 +31,38 @@
     background-color: $seagreen;
   }
 
-  #talks, #talks+ul {
+  #talks {
+    display: inline-block;
+    @extend .page-col-6;
     background-color: $silvergrey;
   }
 
-  #workshops, #workshops+ul {
+  #talks+ul {
+  @extend .col;
+    @extend .page-col-6;
+    background-color: $silvergrey;
+  }
+
+  #workshops  {
+@extend .col;
+    @extend .page-col-6;
     background-color: $bluegreen;
   }
 
-  #visualization-resources, #visualization-resources+p {
+  #workshops+ul {
+      @extend .col-r;
+    @extend .page-col-6;
+    background-color: $bluegreen;
+  }
+
+  #resources, #resources+p {
     background-color: $limegreen;
+  }
+
+  @media screen and (min-width: $on-palm) {
+/*    #talks+ul, #workshops+ul {
+      @extend .col-even;
+    }*/
   }
 
 }

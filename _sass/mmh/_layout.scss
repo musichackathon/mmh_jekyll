@@ -2,24 +2,29 @@
  * Grid
  */
 .col {
-  box-sizing: border-box;
   float: left;
   overflow: hidden;
   display: block;
 }
+.col-l {
+
+  overflow: hidden;
+  display: inline-block;
+}
+
 .page-col-12,
 .page-col-8,
 .page-col-7,
 .page-col-6,
 .page-col-5,
 .page-col-4 {
+  box-sizing: border-box;
   width: 100%;
   padding: 3% 4% 3% 4%;
 }
 
 @media screen and (min-width: $on-palm) {
   .page-row {
-    box-sizing: border-box;
     width: 100%;
     display: block;
     overflow: hidden;
@@ -32,13 +37,16 @@
     width: 58.4%;
   }
   .page-col-6 {
-    @extend .col-even;
     width: 50%;
   }
   .page-col-5 {
-    @extend .col-even;
     width: 41.6%;
   }
+      .col-r {
+      float: right;
+        overflow: hidden;
+  display: block;
+    }
 }
 
 @media screen and (min-width: $on-laptop) {
