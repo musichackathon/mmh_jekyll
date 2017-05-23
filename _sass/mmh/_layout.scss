@@ -1,4 +1,55 @@
 /**
+ * Grid
+ */
+.col {
+  box-sizing: border-box;
+  float: left;
+  overflow: hidden;
+  display: block;
+}
+.page-col-12,
+.page-col-8,
+.page-col-7,
+.page-col-6,
+.page-col-5,
+.page-col-4 {
+  width: 100%;
+  padding: 2% 3% 2% 3%;
+}
+
+@media screen and (min-width: $on-palm) {
+  .page-row {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+  .col-even {
+    margin-bottom: -20em;
+    padding-bottom: 20em;
+  }
+  .page-col-7 {
+    width: 58.4%;
+  }
+  .page-col-6 {
+    @extend .col-even;
+    width: 50%;
+  }
+  .page-col-5 {
+    @extend .col-even;
+    width: 41.6%;
+  }
+}
+
+@media screen and (min-width: $on-laptop) {
+  .page-col-12 {
+    padding-left: calc((100% - (#{$content-width} - 100px))/2);
+    padding-right: calc((100% - (#{$content-width} - 100px))/2);;
+  }
+}
+
+
+/**
  * Page content
  */
 .page-content {
@@ -28,13 +79,18 @@
   font-size: 24px;
 }
 
+img.center {
+  display: block;
+  margin: 0 auto;
+}
 
 
 /**
  * Posts
  */
 .post-header {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit / 2;
+  text-align: center;
 }
 
 .post-title {
@@ -49,6 +105,7 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
+  background-color: pink;
 
   h2 {
     font-size: 28px;
@@ -72,5 +129,10 @@
     @include media-query($on-laptop) {
       font-size: 20px;
     }
+  }
+
+  @include media-query($on-palm) {
+    padding-left: calc((100% - (#{$content-width} - 100px))/2);
+    padding-right: calc((100% - (#{$content-width} - 100px))/2);;
   }
 }
