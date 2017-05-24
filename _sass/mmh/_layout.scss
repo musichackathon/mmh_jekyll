@@ -6,8 +6,8 @@
   overflow: hidden;
   display: block;
 }
-.col-l {
 
+.col-l {
   overflow: hidden;
   display: inline-block;
 }
@@ -25,6 +25,7 @@
 
 @media screen and (min-width: $on-palm) {
   .page-row {
+    box-sizing: border-box;
     width: 100%;
     display: block;
     overflow: hidden;
@@ -42,11 +43,11 @@
   .page-col-5 {
     width: 41.6%;
   }
-      .col-r {
-      float: right;
-        overflow: hidden;
-  display: block;
-    }
+  .col-r {
+    float: right;
+    overflow: hidden;
+    display: block;
+  }
 }
 
 @media screen and (min-width: $on-laptop) {
@@ -113,6 +114,7 @@ img.center {
 
 .post-content {
   margin-bottom: $spacing-unit;
+  background-color: pink;
 
   h2 {
     font-size: 28px;
@@ -137,5 +139,4 @@ img.center {
       font-size: 20px;
     }
   }
-
 }
