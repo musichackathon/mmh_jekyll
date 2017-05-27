@@ -13,7 +13,7 @@
 .site-logo {
   display: inline-block;
   height: 115px;
-  margin-left: -20px;
+  margin-left: -10px;
   margin-bottom: -10px;
 }
 
@@ -139,14 +139,15 @@
   .site-title {
     font-size: 66px;
     line-height: 47px;
-    padding-left: 3%;
   }
 
   .site-nav {
     position: relative;
-    left: 470px;
+    right: -20px;
     top: -36px;
     display: inline-block;
+    width: 375px;
+    float: right;
 
       .page-link {
         color: $text-color;
@@ -155,7 +156,7 @@
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-          margin-right: 9px;
+          margin-right: 1px;
         }
       }
   }

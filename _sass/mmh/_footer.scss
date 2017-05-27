@@ -3,7 +3,25 @@
  */
 .site-footer {
   border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  border-bottom: 1px solid $grey-color-light;
+  padding: $spacing-unit 0 $spacing-unit/2 0;
+  position: relative;
+}
+.site-footer:before {
+  content: " ";
+  position: absolute;
+  top: -12px;
+  left: 0px;
+  width: 100%;
+  border-top: 5px solid $grey-color-dark;
+}
+.site-footer:after {
+  content: " ";
+  position: absolute;
+  bottom: -12px;
+  left: 0px;
+  width: 100%;
+  border-bottom: 5px solid $grey-color-dark;
 }
 
 .footer-heading {

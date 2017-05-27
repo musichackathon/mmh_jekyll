@@ -3,34 +3,42 @@ layout: default
 ---
 <article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+  <div class="color1 col page-col-12">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+    </header>
 
-  {% if page.image %}
-    <img src="assets/events/{{page.image}}"/>
-  {% endif %}
+    {% if page.image %}
+      <img src="assets/events/{{page.image}}" class="center"/>
+    {% endif %}
 
-  {% if page.description %}
-    <h2>{{page.description}}</h2>
-  {% endif %}
+    {% if page.description %}
+      <h2>{{page.description}}</h2>
+    {% endif %}
+  </div>
 
-  {% if page.days %}
-    {% for day in page.days %}
-        <h3>{{day.day | date: site.date_format }} {{day.start | date: site.time_format}}–{{day.end | date: site.time_format}}</h3>
-    {% endfor %}
-  {% elsif page.date %}
-    <h3>{{page.date | date: site.date_format }}</h3>
-    <h3>{{page.date | date: site.time_format }}</h3>
-  {% endif %}
+  <div class="page-row">
+    <div class="dashborder col page-col-7">
+      {% if page.days %}
+        {% for day in page.days %}
+            <h3>{{day.day | date: site.date_format }} {{day.start | date: site.time_format}}–{{day.end | date: site.time_format}}</h3>
+        {% endfor %}
+      {% elsif page.date %}
+        <h3>{{page.date | date: site.date_format }}</h3>
+        <h3>{{page.date | date: site.time_format }}</h3>
+      {% endif %}
 
-  {% if page.address %}
-    <h3>{{page.address}}</h3>
-  {% endif %}
+      {% if page.address %}
+        <h3>{{page.address}}</h3>
+      {% endif %}
+    </div>
 
-  {% if page.rsvp %}
-    <h3><a href="{{page.rsvp}}">RSVP</a></h3>
-  {% endif %}
+    <div class="color2 col page-col-5">
+      {% if page.rsvp %}
+        <h3><a href="{{page.rsvp}}">RSVP</a></h3>
+      {% endif %}
+    </div>
+  </div>
 
   <div class="post-content">
     {{ content }}

@@ -6,18 +6,14 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
+        {% assign upcomingEvents = ((site.events | where_exp:"event", "event.date >= site.time") | sort: 'date' %}
+        {% assign nextEvent = upcomingEvents.first %}
+        <p>Next Event:</p>
+        {% if nextEvent %}
+          <p><a href="{{ nextEvent.url | relative_url }}">{{ nextEvent.title | escape }}</a></p>
+        {% else %}
+          <p>Check back soon.</p>
+        {% endif %}
       </div>
 
       <div class="footer-col footer-col-2">
@@ -56,6 +52,11 @@
           <li>
             {% include icon-github-repo.html username=site.github_username repo=site.github_repo text="Contribute to site" %}
           </li>
+          {% endif %}
+          
+          {% if site.email %}
+            {% assign email_url = "mailto:" | append: site.email) %}
+            {% include icon-empty.html url=email_url text="Email us" %}
           {% endif %}
         </ul>
       </div>
