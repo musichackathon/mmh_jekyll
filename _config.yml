@@ -21,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://monthlymusichackathon.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: musichackathon
 github_username: musichackathon
+github_repo: mmh_jekyll
 facebook_url: musichackathon
 email_list_signup_url: "http://monthlymusichackathon.us5.list-manage1.com/subscribe?u=498e6061a6f7a0ca8bf5da9f8&id=30b00385af"
 eventbrite_url: "https://www.eventbrite.com/o/monthly-music-hackathon-nyc-2470452960"
