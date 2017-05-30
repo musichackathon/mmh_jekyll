@@ -1,0 +1,68 @@
+/**
+ * Event Content
+ */
+
+.event-content {
+  @extend .post-content;
+
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 3%;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 5% 3% 5%;
+
+    li {
+      padding: 2px;
+    }
+
+    @include media-query($on-laptop) {
+      padding-left: calc((100% - (#{$content-width} - 100px))/2);
+      padding-right: calc((100% - (#{$content-width} - 100px))/2);;
+    }
+  }
+
+  #schedule, #schedule+ul {
+    background-color: $seagreen;
+  }
+
+  #talks {
+    display: inline-block;
+    @extend .page-col-6;
+    background-color: $silvergrey;
+  }
+
+  #talks+ul {
+  @extend .col;
+    @extend .page-col-6;
+    background-color: $silvergrey;
+  }
+
+  #workshops  {
+@extend .col;
+    @extend .page-col-6;
+    background-color: $bluegreen;
+  }
+
+  #workshops+ul {
+      @extend .col-r;
+    @extend .page-col-6;
+    background-color: $bluegreen;
+  }
+
+  #resources, #resources+p {
+    background-color: $limegreen;
+  }
+
+  @media screen and (min-width: $on-palm) {
+/*    #talks+ul, #workshops+ul {
+      @extend .col-even;
+    }*/
+  }
+
+}

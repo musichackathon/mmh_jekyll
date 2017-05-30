@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home wrapper">
 
   {{ content }}
 
-  <h1>Next event</h1> 
+  <h1>Next event</h1>
   {% assign nextEvents = ((site.events | where_exp:"event", "event.date >= site.time") | sort: 'date' %}
   {% include event_list_item.html event=nextEvents.first %}
 

@@ -39,9 +39,10 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
+  "mmh/colors",
   "mmh/base",
   "mmh/header",
   "mmh/footer",
   "mmh/layout",
-  "mmh/colors"
+  "mmh/event"
 ;
