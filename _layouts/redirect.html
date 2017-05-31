@@ -2,11 +2,13 @@
 layout: default
 ---
 
-<meta http-equiv="refresh" content="0; url={{site.tumblr_archive}}{{page.permalink}}" />
-
-<h1>This page has been archived</h1>
-<a href="{{site.tumblr_archive}}{{page.permalink}}" title="redirect">Click here</a> if not redirected.
+<h1>This page has been moved</h1>
+<h3>Redirecting to our tumblr archive.</h3>
+<p><a href="{{page.redirect.to}}" title="redirect">Click here</a> if not redirected.</p>
+<p><a href="{{site.url}}" title="home">Click here</a> to stay on the new site.</p>
 
 <script>
-	window.location.href = '{{site.tumblr_archive}}{{page.permalink}}';
+	setTimeout(function() {
+		window.location.href = '{{page.redirect.to}}';
+	}, {{site.redirect_delay_seconds}} * 1000);
 </script>

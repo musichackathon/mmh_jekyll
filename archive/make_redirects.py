@@ -8,9 +8,10 @@ orig_domain = 'http://monthlymusichackathon.org'
 def make_frontmatter(permalink):
 	return """---
 permalink: '{0}'
+redirect_to: '{1}'
 layout: redirect
 ---
-""".format(permalink)
+""".format(permalink, orig_domain + permalink)
 
 with open('tumblr_archive.json') as data_file:    
 	data = json.load(data_file)
