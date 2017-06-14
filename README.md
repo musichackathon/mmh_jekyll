@@ -32,6 +32,8 @@ request."
 5. Click "Propose file change".
 6. On the next screen, add one or more appropriate reviewers.
 7. Click 'Create pull request'.
+8. Address comments as needed.
+9. When approved, submit with a "Squash and merge", cleaning up and updating the commit comment as needed. 
 
 ## To add a new event
 
