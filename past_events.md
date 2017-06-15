@@ -1,6 +1,7 @@
 ---
-title: Past Events
 layout: past_events_list
+title: Past Events
+permalink: past_events
 navigation_order: 2
 ---
 

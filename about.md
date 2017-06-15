@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: about
 navigation_order: 5
 ---
 

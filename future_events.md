@@ -1,6 +1,7 @@
 ---
-title: Future Events
 layout: future_events_list
+title: Future Events
+permalink: future_events
 navigation_order: 1
 ---
 
