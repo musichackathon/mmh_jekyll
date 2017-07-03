@@ -1,5 +1,5 @@
 ---
-date: 2014-04-29
+date: 2014-04-26
 title: "Harris Wulfson’s LiveScore"
 creator_names: ["Jonathan Marmor"]
 ---
