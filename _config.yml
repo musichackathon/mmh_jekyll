@@ -53,9 +53,12 @@ defaults:
 collections:
   events:
     output: true
-    permalink: /:year-:month-:day/
+    permalink: /:collection/:year-:month-:day/
   posts:
-    permalink: /:year-:month-:day-:title/
+    permalink: /blog/:year-:month-:day-:title/
+  projects:
+    output: true
+    permalink: /:collection/:year-:month-:day-:title/
   resources:
     output: true
     permalink: /:collection/:name/

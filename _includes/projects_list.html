@@ -1,0 +1,10 @@
+{% if include.projects %}
+  <ul class="post-list">
+    {% assign sortedProjects = include.projects | sort: 'title' %}
+    {% for project in sortedProjects %}
+      <li>
+        {% include project_list_item.html project=project %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

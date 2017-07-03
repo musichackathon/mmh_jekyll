@@ -1,0 +1,4 @@
+<h3><a class="post-link" href="{{ include.project.url | relative_url }}">{{ include.project.title | escape }}</a></h3>
+{% if include.project.creator_names %}
+	<p class="post-meta">{{ include.project.creator_names | join: ", " }}</p>
+{% endif %}

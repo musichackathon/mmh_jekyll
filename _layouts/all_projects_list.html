@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="home wrapper">
+
+  <h1 class="page-heading">Past projects</h1>
+
+  {{ content }}
+
+  {% assign projectsGroupedByDate =
+      ((site.projects | group_by_exp:"project", "project.date | date: site.date_format")
+          | sort: 'name' | reverse %}
+
+  {% for projectsOnDate in projectsGroupedByDate %}
+    <h1 class="page-heading">{{ projectsOnDate.name }}</h1>
+    {% include projects_list.html projects=projectsOnDate.items %}
+  {% endfor %}
+</div>

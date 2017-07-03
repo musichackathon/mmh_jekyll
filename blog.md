@@ -1,6 +1,6 @@
 ---
 layout: blog
 title: Blog
-permalink: blog
-navigation_order: 4
+permalink: /blog/
+navigation_order: 5
 ---

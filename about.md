@@ -1,8 +1,8 @@
 ---
 layout: page
 title: About
-permalink: about
-navigation_order: 5
+permalink: /about/
+navigation_order: 6
 ---
 
 **Monthly Music Hackathon NYC is a monthly all-day event for musicians and engineers to create new music-related projects from scratch, develop them throughout ~10 hours, then perform or present them in a concert in the evening.**
