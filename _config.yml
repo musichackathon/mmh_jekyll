@@ -29,11 +29,14 @@ timezone: America/New_York
 date_format: "%b %-d, %Y"
 time_format: "%I:%M %P"
 future: true
+tumblr_archive: http://monthlymusichackathon.org
+redirect_delay_seconds: 2
 
 # Build settings
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -59,3 +62,5 @@ collections:
   resources:
     output: true
     permalink: /:collection/:name/
+  redirects:
+    output: true

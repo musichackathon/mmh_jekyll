@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>This page has been moved</h1>
+<h3>Redirecting to our tumblr archive.</h3>
+<p><a href="{{page.redirect.to}}" title="redirect">Click here</a> if not redirected.</p>
+<p><a href="{{site.url}}" title="home">Click here</a> to stay on the new site.</p>
+
+<script>
+	setTimeout(function() {
+		window.location.href = '{{page.redirect.to}}';
+	}, {{site.redirect_delay_seconds}} * 1000);
+</script>
