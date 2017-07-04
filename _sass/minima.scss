@@ -1,6 +1,8 @@
+@charset "utf-8";
+
 // Define defaults for each variable.
 
-$base-font-family: Helvetica, Arial, sans-serif !default;
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -19,9 +21,7 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 // Width of the content area
 $content-width:    800px !default;
 
-$on-smallPhone:    380px !default;
-$on-largePhone:    450px !default;
-$on-palm:          570px !default;
+$on-palm:          600px !default;
 $on-laptop:        800px !default;
 
 // Use media queries like this:
@@ -32,17 +32,18 @@ $on-laptop:        800px !default;
 //   }
 // }
 @mixin media-query($device) {
-  @media screen and (min-width: $device) {
+  @media screen and (max-width: $device) {
     @content;
   }
 }
 
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
 // Import partials.
 @import
-  "mmh/colors",
-  "mmh/base",
-  "mmh/header",
-  "mmh/footer",
-  "mmh/layout",
-  "mmh/event"
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
 ;
