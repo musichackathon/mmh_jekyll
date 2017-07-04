@@ -1,0 +1,70 @@
+---
+layout: post
+title: Jazz Hackathon 2014 Hacks
+date: '2014-04-29T01:16:00-04:00'
+tags:
+- jazz
+- hackathon
+- tech
+- music
+- nyc
+tumblr_url: http://monthlymusichackathon.org/post/84200826477/jazzhacks
+---
+<p>The 2nd annual Jazz Hackathon was held at Columbia University on Saturday. Below is a selection of the wonderful hacks that were made.</p>
+
+<p><br/><b>Hong Kong Bloops</b><br/>
+Brian McFee</p>
+
+<p>Brian applied his infamous <a href="http://evolver.fm/2012/11/15/listen-what-if-lady-gaga-and-wham-made-chiptunes/">AutoChipTune</a> technology to the old tune “<a href="http://youtu.be/PmKQOxB6lpI">Hong Kong Blues</a>&ldquo; by <a href="http://en.wikipedia.org/wiki/Hoagy_Carmichael">Hoagie Carmichael</a>, which you may know from the movie <a href="https://www.youtube.com/watch?v=SUn4DOGiY_A">To Have Or Have Not</a>. But converting this 1939 masterpiece into a video game caricature wasn’t enough. He also extracted the lead vocal from the original and layered it over the chip tune version. I love how it sounds retro in two different ways.</p>
+
+<p><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/146650364&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=true"></iframe></p>
+
+<p><br/><b>Pop to Jazz Converter</b><br/>
+C.J. Carr &amp; Brian McFee</p>
+
+<p>This project was a brilliant idea that could easily be a 5 year project. It’s shocking they got so much of it done in 8 hours. The premise is that much jazz is derived from popular music. A simplified description of the process might be: a characteristic element or section of the pop piece is played by an ensemble, then the rhythm and harmonies are looped while soloists take turns elaborating on the melodic thematic material of the original song, then the characteristic section from the beginning is repeated by the whole ensemble. The goal of the project was to make a machine that automatically remixes the audio of a pop song into a new jazz song. I won’t describe their technical process here, but you can find Brian or C.J. on the internet if you want to ask them about it.</p>
+
+<p>Wonderful quote from C.J.: “What I love about jazz is that it takes something you’re familiar with then fucks with it until your mind is blown.”</p>
+
+<p><br/><b>Crowd Remix</b><br/>
+C.J. Carr</p>
+
+<p>C.J. made a lovely <a href="http://cortexel.us/crowdremix/crowdremix.php">website</a> that turns any song (any audio, actually) into a musical instrument. It uses The Echo Nest Remix API to break the song up into tiny segments and get audio analysis for each chunk. The song is visually layed out in a strip across the screen with segments clustered together based on timbral quality. As you scrub your mouse across the strip each segment loops, creating a sweeping granular synthesis type of sound. Play around with it yourself here: <a href="http://cortexel.us/crowdremix/crowdremix.php.">http://cortexel.us/crowdremix/crowdremix.php.</a></p>
+
+<p><br/><b>&lsquo;Round Midnight/A La Nana</b><br/>
+Candida Haynes</p>
+
+<p>Candida Haynes is a singer and programmer. At the Jazz Hackathon, she made a lovely mashup of “‘Round Midnight”, the Ladino song “A La Nana”, and her original “Somewhere.” We were treated to her live a capella singing accompanied by herself with an effect that looped her voice which she manipulated in real time.</p>
+
+<p><iframe width="420" height="315" src="//www.youtube.com/embed/0Qgduj1JQcM?rel=0" frameborder="0" allowfullscreen></iframe></p>
+
+<p><br/><b>Acoustic-Driven Synthesizer</b><br/>
+Dylan Sherry </p>
+
+<p>Dylan Sherry is a saxophonist and computer scientist who works with genetic programming for data mining. At the Jazz Hackathon he used SuperCollider to follow the pitch of an acoustic signal and trigger a synth with the same pitches. The process of translating from the acoustic sound to the very dry synthesizer is not perfect, which creates a very nice glitchy effect. (Audio sample coming soon!)</p>
+
+<p><br/><b>Sub Machine</b><br/>
+Andres Marin</p>
+
+<p>Andres built a sequencer in Max for Live that lets you set up harmonic progressions and provides a nice interface for manipulating chord substitutions in real time. It’s interesting to hear a persistent simple progression with essentially random substitutions.</p>
+
+<p><br/><b>Jazz Map</b><br/>
+David Su</p>
+
+<p>David plotted <a href="https://www.lordisco.com/">The Jazz Discography by Tom Lord</a> on a world map with a timeline slider, showing the recording location and year for recordings from 1900 - 1953.</p>
+
+<p><br/><b>The Girl From Ipanema</b><br/>
+Andreas Jansson</p>
+
+<p>Andreas Jansson likes Bossa Nova, but to him the chords are much more interesting than all the other “post colonial bullshit.” So he wanted to figure out a way to make new music that features the harmonies used in Bossa Nova, but uses different rhythms and timbres and textures. What he came up with is software that generates beautiful realizations of Bossa Nova harmonic progressions made from thousands of tiny samples of the top 1000 most popular songs in the US since 1950 according to Billboard. The result has lush timbres, subtle rhythmic layerings, and a meditative tone.</p>
+
+<p>The process for creating this new Bossa Nova and Pop-derived music was somewhat straightforward. Audio of the top 1000 most popular Billboard pop songs was broken down into segments at every attack using The Echo Nest API. The Echo Nest provides an estimation of the strength of each of the twelve pitch classes for every segement, which Jansson used to identify segments that had one, two, or three very prominent pitches and very low strength of all other notes. A harmonic progression was then chosen manually (he used Girl From Ipanema in his demo at the Jazz Hackathon) which was realized by layering repeated segments. For example, if a harmony is {C E G Bb}, five segments might be chosen: {C}, {C G}, {E}, {C E G}, {G Bb}. Because each segment is a different length and the segments are being repeated, the result is a random polyrhythm of several different tempos.</p>
+
+<p>Check out the code here: <a href="https://github.com/andreasjansson/jazzcollage">https://github.com/andreasjansson/jazzcollage</a></p>
+
+<p><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/146668001&amp;auto_play=false&amp;hide_related=true&amp;visual=true"></iframe></p>
+
+<p><br/><b>Harris Wulfson’s LiveScore</b><br/>
+Jonathan Marmor</p>
+
+<p>I spent the majority of the Jazz Hackathon doing something not particularly jazzy: preparing my late friend Harris Wulfson’s piece LiveScore for a performance at the SPOR Festival for Contemporary Music and Sound Art (<a href="http://www.sporfestival.dk/">http://www.sporfestival.dk/</a>). It’s a fascinating piece. Several musicians with acoustic instruments read parts that are generated in real time based on input from a bank of knobs which the audience is invited to play with. The code is here if you’re interested: <a href="https://github.com/harriswulfson/livescore">https://github.com/harriswulfson/livescore</a></p>
