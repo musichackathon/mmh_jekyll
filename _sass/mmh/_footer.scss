@@ -33,6 +33,13 @@
 .social-media-list {
   list-style: none;
   margin-left: 0;
+
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .footer-col-wrapper {
