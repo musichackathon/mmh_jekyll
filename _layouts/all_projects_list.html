@@ -4,8 +4,6 @@ layout: default
 
 <div class="home wrapper">
 
-  <h1 class="page-heading">Past projects</h1>
-
   {{ content }}
 
   {% assign projectsGroupedByDate =
@@ -13,7 +11,7 @@ layout: default
           | sort: 'name' | reverse %}
 
   {% for projectsOnDate in projectsGroupedByDate %}
-    <h1 class="page-heading">{{ projectsOnDate.name }}</h1>
+    <h2 class="page-heading">{{ projectsOnDate.name }}</h2>
     {% include projects_list.html projects=projectsOnDate.items %}
   {% endfor %}
 </div>
