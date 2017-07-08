@@ -1,7 +1,6 @@
 # Demonstration of Jekyll for Monthly Music Hackathon
 
-Website can be seen at http://musichackathon.github.io/mmh_jekyll
-
+Website can be seen at http://mmhpreview.com
 # Making changes
 
 There are a few basic steps that will be common to any website change:
