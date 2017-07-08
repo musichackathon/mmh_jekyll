@@ -6,12 +6,12 @@ layout: default
 
   {{ content }}
 
-  <h1>Next event</h1>
+  <h1>Upcoming events</h1>
   {% assign nextEvents = ((site.events | where_exp:"event", "event.date >= site.time") | sort: 'date' %}
-  {% include event_list_item.html event=nextEvents.first %}
+  {% include event_list.html events=nextEvents limit=3 %}
 
-  <h1>Last event</h1>
+  <h1>Recent events</h1>
   {% assign pastEvents = ((site.events | where_exp:"event", "event.date <= site.time") | sort: 'date' | reverse %}
-  {% include event_list_item.html event=pastEvents.first %}
+  {% include event_list.html events=pastEvents limit=2 %}
 
 </div>
