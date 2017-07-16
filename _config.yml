@@ -55,7 +55,7 @@ collections:
   events:
     output: true
     permalink: /:collection/:year-:month-:day/
-  events/archive:
+  events_archive:
     output: true
     permalink: /:collection/
   posts:
