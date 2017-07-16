@@ -1,5 +1,6 @@
 ---
-title: Blog
 layout: blog
-navigation_order: 3
+title: Blog
+permalink: /blog/
+navigation_order: 5
 ---

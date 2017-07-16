@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home wrapper">
 
   <h1 class="page-heading">Posts</h1>
-  
+
   {{ content }}
 
   <ul class="post-list">
@@ -15,6 +15,7 @@ layout: default
 
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          {{post.excerpt}}
         </h2>
       </li>
     {% endfor %}

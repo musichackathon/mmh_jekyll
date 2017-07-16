@@ -13,8 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+<<<<<<< HEAD
 title: Monthly Music Hackathon
 name: Monthly Music Hackathon
+=======
+title: "Monthly Music Hackathon"
+>>>>>>> 5bd5da297d87095008428279d53c4a2aeb7481dc
 email: musichackathon@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   At Monthly Music Hackathon NYC, musicians, programmers, artists, scientists, composers, hardware tinkerers, and others spend the last Saturday of each month hacking together projects exploring music. At 8pm we have a concert and presentations of the art, technology, and research developed that day. It's open to everyone. Please come participate or observe.
@@ -22,7 +26,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://monthlymusichackathon.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: musichackathon
 github_username: musichackathon
-facebook_url: musichackathon
+github_repo: mmh_jekyll
+facebook_username: musichackathon
 email_list_signup_url: "http://monthlymusichackathon.us5.list-manage1.com/subscribe?u=498e6061a6f7a0ca8bf5da9f8&id=30b00385af"
 eventbrite_url: "https://www.eventbrite.com/o/monthly-music-hackathon-nyc-2470452960"
 timezone: America/New_York
@@ -35,9 +40,9 @@ future: true
 
 # Build settings
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed
+  - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -48,10 +53,21 @@ defaults:
       type: events
     values:
       layout: event
+  - scope:
+      path: ""
+      type: resources
+    values:
+      layout: resource
 
 collections:
   events:
     output: true
-    permalink: /:year-:month-:day.html
+    permalink: /:collection/:year-:month-:day/
   posts:
-    permalink: /:year-:month-:day-:title.html
+    permalink: /blog/:year-:month-:day-:title/
+  projects:
+    output: true
+    permalink: /:collection/:year-:month-:day-:title/
+  resources:
+    output: true
+    permalink: /:collection/:name/

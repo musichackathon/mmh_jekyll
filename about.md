@@ -1,12 +1,13 @@
 ---
 layout: page
 title: About
-navigation_order: 4
+permalink: /about/
+navigation_order: 6
 ---
 
-**Monthly Music Hackathon NYC is a monthly all-day event for musicians and engineers to create new music-related projects from scratch, develop them throughout ~10 hours, then perform or present them in a concert in the evening.**
+Monthly Music Hackathon NYC is a monthly all-day event for musicians and engineers to create new music-related projects from scratch, develop them throughout ~10 hours, then perform or present them in a concert in the evening.
 
-## **FAQ**
+# FAQ
 
 ## Who should go to the concert?
 
@@ -80,7 +81,7 @@ The ideas from the tech startup world of rapid prototyping, iteration, and compl
 
 ## Who are the sponsors?
 
-We’re trying to be as free from sponsorships as possible, in order for the nature of the event to be guided as much as possible by its participants.  However, we’ve had sponsorships from 10gen, MailChimp, Slader, exfm, Ace Hotel, Etsy, Control Group, Arup, Two Boots Pizza, and others.
+We’re trying to be as free from sponsorships as possible, in order for the nature of the event to be guided as much as possible by its participants.
 
 ## Are you looking for sponsors?
 
@@ -92,36 +93,11 @@ Yes!  Please let us know if you want to help set up, clean up, carry food in or 
 
 ## Who are you?
 
-The organizers of Monthly Music Hackathon NYC are an eclectic mix of musicians, engineers, artists, scientists, and weirdos:
-
-- Adam November
-- Aditya Mukerjee
-- Andreas Jansson
-- Ari Russo
-- Athena Koumis
-- Ben Lacker
-- Brendan Adamson
-- Brenden Hussey
-- Brian McFee
-- Jamie Burkart
-- Jason Sigal
-- Jonathan Marmor
-- Michael Bunsen
-- Michael Musick
-- Nick Colvin
-- Travis McDemus
+The organizers of Monthly Music Hackathon NYC are an eclectic mix of musicians, engineers, artists, scientists, and weirdos.
 
 ## Do you need help organizing?
 
 Yes! If you want to help decide what the future of Monthly Music Hackathon NYC will be, and want to work to make it happen, please get in touch!
 
-For more info, contact:
-
-Monthly Music Hackathon NYC
-
-[{{site.email}}](mailto:{{site.email}})
-
-[@{{site.twitter_username}}](https://twitter.com/{{site.twitter_username}})
-
-Significant guidance on the planning of the launch of this event series in 2012 was provided by Jessica Thompson, Trevor Knight (both of whom organized the amazing Montreal Musitk hackathon), Ari Russo, and the staff of exfm: Dan Kantor, Marshall Jones, Lucas Hrabovsky, Kirk Love, Jessica Page, and Joe Kanakaraj.
+For more info, email us at [{{site.email}}](mailto:{{site.email}}) or contact us on Twitter [@{{site.twitter_username}}](https://twitter.com/{{site.twitter_username}}).
 

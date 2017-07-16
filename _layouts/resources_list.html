@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="home wrapper">
+
+  <h1 class="page-heading">Resources</h1>
+
+  {{ content }}
+
+  <ul>
+    {% for resource in site.resources %}
+      <li>
+        <h2>
+          <a href="{{ resource.url | relative_url }}">{{ resource.name | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

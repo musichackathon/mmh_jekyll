@@ -1,0 +1,25 @@
+---
+layout: post
+title: Multichannel Distributed Audio With node.js
+date: '2012-10-21T19:29:15-04:00'
+tags:
+- october
+- '2012'
+- projects
+- drew is awesome
+redirect_from:
+  - /post/34062771897/
+  - /post/34062771897/multichannel-distributed-audio-with-nodejs/
+excerpt_separator: <!--more-->
+---
+<!--more-->
+<p><a href="http://drewbharris.com/post/34057472161/multichannel-distributed-audio-with-node-js" class="tumblr_blog">drewbharris</a>:</p>
+
+<blockquote><p><a href="https://github.com/grmnygrmny/node-multi">node-multi on Github</a></p>
+<p>I haven’t spent much time talking about software development (or much of anything here), so this is my attempt to change that.</p>
+<p>I’m about 2 months into working as a full-time node.js developer for <a href="http://ex.fm">exfm</a>, a music discovery tool based in New York City.  My previous experience with writing software was mostly Python and C++, and only partially web-oriented.  Asynchronous Javascript is really interesting, and learning it has really challenged me to write code better.  Node is incredibly efficient at a lot of tasks, and I’m interested to see how quickly it will be accepted as a suitable replacement for bulky Python or PHP web applications.</p>
+<p>This past Saturday was the Monthly Music Hackathon here in New York, put on by a coworker and friend here at exfm.  I had been toying with the idea of a distributed audio performance platform for a while, utilizing the speakers that most people have in their smartphones or laptops to create an interactive experience, maybe in the form of a static installation.  After playing around with WebSockets and the <a href="http://socket.io/">socket.io</a> node module, I was ready to give it a shot.</p>
+<p>After about 8 hours of development at the hackathon I ended up with something that was somewhat functional, albeit with some frustrating caveats - it turns out synchronizing messages from a server to many clients while preserving &lt;50ms synchronization is a challenge, especially when the server is accepting connections and distributing audio files to &gt;30 clients.  Also, the best choice for synchronization turned out to be the new HTML5 <a href="https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html">Web Audio API</a>, though it is currently only implemented in Chrome, WebKit and desktop and mobile Safari (iOS 6).  This limits the cross platform compatibility, but the mobile implementation of the &lt;audio&gt; tag presents a lot more challenges.  I’m hoping the Chrome for Android catches up quickly.</p>
+<p>The code is publicly available on <a href="https://github.com/grmnygrmny/node-multi">Github</a>.  A ‘multi’ server is run and filled up with mp3 files (for my purposes, separated instrument tracks from a song) and clients are connected to the server’s address in a compatible web browser.  Clients are automatically provisioned with mp3 tracks by the multi server, and a ‘master’ web interface is presented with controls to start playback, stop playback and force re-initialization of the clients.</p>
+<p>When I tested this platform at the hackathon, my laptop froze to a complete halt while serving ~30 connections.  After a bit of research, I’m pretty sure this is due to Express (node.js web framework) having difficulty serving ~8mb mp3 files to many clients at once.  In the future, I’m going to try placing an nginx web server in front of all static content to see if it helps.  After some careful sequential adding of clients (literally the opposite of asynchronous), multi did manage to play a full song through many devices, albeit with up to 500ms of latency between clients.</p>
+<p>The code is runnable now, but it’s under heavy development.  I’m working on added on-the-fly mp3 transcoding, dynamic latency-adjustment and proper web templates (though I’m really not a front-end developer at all).  My goal is to have the system running stable enough to deploy as an electronic art installation somewhere.  I might also try to incorporate it into my <a href="http://grmnygrmny.bandcamp.com">live performance</a>, but that’s likely harder…</p></blockquote>

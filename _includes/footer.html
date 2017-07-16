@@ -6,6 +6,7 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
+<<<<<<< HEAD
         <ul class="contact-list">
           <li>
             {% if site.author %}
@@ -20,11 +21,22 @@
             <li class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
             </li>
         </ul>
+=======
+        {% assign upcomingEvents = ((site.events | where_exp:"event", "event.date >= site.time") | sort: 'date' %}
+        {% assign nextEvent = upcomingEvents.first %}
+        <p>Next Event:</p>
+        {% if nextEvent %}
+          <p><a href="{{ nextEvent.url | relative_url }}">{{ nextEvent.title | escape }}</a></p>
+        {% else %}
+          <p>Check back soon.</p>
+        {% endif %}
+>>>>>>> 5bd5da297d87095008428279d53c4a2aeb7481dc
       </div>
 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
           {% if site.email_list_signup_url %}
+<<<<<<< HEAD
           <li>
             {% include icon-empty.html url=site.email_list_signup_url text="Email list" %}
           </li>
@@ -34,26 +46,50 @@
           <li>
             {% include icon-empty.html url=site.eventbrite_url text="Eventbrite" %}
           </li>
+=======
+            <li>
+              {% include icon-mail.html 
+                url=site.email_list_signup_url 
+                text="Email list signup" %}
+            </li>
+>>>>>>> 5bd5da297d87095008428279d53c4a2aeb7481dc
           {% endif %}
 
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
+          {% if site.eventbrite_url %}
+            <li>
+              {% include icon-eventbrite.html 
+                url=site.eventbrite_url 
+                text="Eventbrite" %}
+            </li>
           {% endif %}
 
           {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
+            <li>
+              {% include icon-twitter.html 
+                username=site.twitter_username %}
+            </li>
           {% endif %}
 
-          {% if site.facebook_url %}
-          <li>
-            {% include icon-empty.html url=site.facebook_url text="Facebook" %}
-          </li>
+          {% if site.facebook_username %}
+            <li>
+              {% include icon-facebook.html 
+                username=site.facebook_username %}
+            </li>
           {% endif %}
 
+          {% if site.github_username and site.github_repo %}
+            <li>
+              {% include icon-github-repo.html 
+                username=site.github_username
+                repo=site.github_repo 
+                text="Contribute" %}
+            </li>
+          {% endif %}
+          
+          {% if site.email %}
+            {% assign email_url = "mailto:" | append: site.email) %}
+            {% include icon-mail.html url=email_url text="Email us" %}
+          {% endif %}
         </ul>
       </div>
 

@@ -1,7 +1,6 @@
 # Demonstration of Jekyll for Monthly Music Hackathon
 
-Website can be seen at http://musichackathon.github.io/mmh_jekyll
-
+Website can be seen at http://mmhpreview.com
 # Making changes
 
 There are a few basic steps that will be common to any website change:
@@ -32,6 +31,8 @@ request."
 5. Click "Propose file change".
 6. On the next screen, add one or more appropriate reviewers.
 7. Click 'Create pull request'.
+8. Address comments as needed.
+9. When approved, submit with a "Squash and merge", cleaning up and updating the commit comment as needed. 
 
 ## To add a new event
 
@@ -47,3 +48,14 @@ that says, "published: false".
 6. Update all the other fields and content as needed.
 7. Follow the directions from step 3 above to write a description, create a new branch, 
 propose changes, add reviewers, and create the pull request.
+
+## Build someone else's changes
+
+If someone has added you as a reviewer on a pull request, you can look at the changes locally by:
+
+```sh
+$ git fetch # pulls down all branches
+$ git branch -a # shows you *all* of the branches prefixed by the remote name, e.g. origin/branch_for_review
+$ git checkout branch_for_review
+$ bundle exec jekyll serve # Serve the website on localhost:4000 like usual
+````

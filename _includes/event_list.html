@@ -1,0 +1,19 @@
+{% if include.events %}
+  <ul class="post-list">
+    {% if include.limit %}
+      {% for event in include.events limit: include.limit %}
+        <li>
+          {% include event_list_item.html event=event %}
+        </li>
+      {% endfor %}
+    {% else %}
+      {% for event in include.events %}
+        <li>
+          {% include event_list_item.html event=event %}
+        </li>
+      {% endfor %}
+    {% endif %}
+  </ul>
+{% else %}
+  <h2>Please check back soon.</h2>
+{% endif %}

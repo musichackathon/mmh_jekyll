@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Future events</h1>
+<div class="home wrapper">
 
   {{ content }}
+
+  <h1 class="page-heading">Future events</h1>
 
   <ul class="post-list">
     {% assign futureEvents = (site.events | where_exp:"event", "event.date >= site.time") | sort 'date' %}

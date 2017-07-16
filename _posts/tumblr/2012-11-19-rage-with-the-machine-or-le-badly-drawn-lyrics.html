@@ -1,0 +1,36 @@
+---
+layout: post
+title: '"Rage with the machine" OR "Le Badly Drawn Lyrics Visualizer"'
+date: '2012-11-19T14:00:00-05:00'
+tags:
+- '2012'
+- brian mcfee
+- hacks
+- november
+- projects
+- matt mcvicar
+redirect_from:
+  - /post/36077466937/
+  - /post/36077466937/rage-with-the-machine-or-le-badly-drawn-lyrics/
+excerpt_separator: <!--more-->
+---
+<!--more-->
+[An awesome project by Brian McFee and Matt McVicar from the November 2012 Monthly Music Hackathon NYC]
+
+<p><a href="http://functiontelechy.tumblr.com/post/36031244932/rage-with-the-machine-or-le-badly-drawn-lyrics" class="tumblr_blog">functiontelechy</a>:</p>
+
+<blockquote><p>Saturday was my second visit to the <a href="http://monthlymusichackathon.org/">NYC Monthly Music Hackathon</a>. The hackathon differs from <a href="http://musichackday.org/">Music Hackday</a>, in that you have much less time to put something together: about 6-8 hours instead of 24. As a result, the hacks tend to be a bit smaller in scope, but it’s a nice opportunity to play around with some APIs and get something working without having to sweat the details.</p>
+<p>This time around, I teamed up with <a href="http://www.mattmcvicar.com/">Matt McVicar</a>, and pulled up a hack idea that’s been sitting in my brain <a href="https://twitter.com/functiontelechy/status/79199452564430848">for quite some time</a>: automatically generate an animated <a href="http://www.reddit.com/r/fffffffuuuuuuuuuuuu/">rage comic</a> from the <a href="http://imgur.com/WfN7k">lyrics of a song</a>.  The end result looks something like this:</p>
+<p><img align="middle" src="http://68.media.tumblr.com/tumblr_mdpl5jykPe1ra2gda.gif"/></p>
+<p>The <a href="https://github.com/bmcfee/musichacks/tree/master/2012.11nyc">hack</a> basically works as follows:</p>
+<ol><li>Receive a search query (artist/title text),</li>
+<li>search <a href="http://the.echonest.com/">Echo Nest</a> for songs matching the query, limited to the <a href="http://www.rdio.com/">Rdio</a>-US and <a href="http://musixmatch.com/">musixmatch</a>-WW buckets,</li>
+<li>retrieve lyrics from musixmatch and query <a href="http://www.musicmetric.com/">musicmetric</a> for line-by-line sentiment analysis,</li>
+<li>map sentiment output (1: bad up to 5: good) onto <a href="http://alltheragefaces.com/">rage face</a> prototypes,</li>
+<li>display lyrics and animate corresponding faces in time to the music.</li>
+</ol><p>The hack as presented basically works, despite failing mid-demo due to exceeding my API rate limits (sorry!), but we had to make several simplifications from the original design.</p>
+<p><strong>Some compromises</strong></p>
+<p>The original plan calls for time-stamped lyrics which can be displayed in sync with the music via Rdio’s playback widget.  We had planned to use the LyricFind API, which provided this kind of data for several hacks at the Boston hackday, but were sadly thwarted by LyricFind’s lack of open access.  </p>
+<p>After spending a while sniffing around, we settled on MusiXMatch, which has a simple API, but does not provide timestamps. We hacked around it by guessing a simple linear mapping of line number to onset time within the song, but this is clearly wrong for just about every song. A more sophisticated approach would attempt to localize phonemes within the audio stream, but that’s much more work than would be feasible in an 8-hour hack.</p>
+<p>We had also originally planned to do a build a more elaborate sentiment model, using word-level valence and arousal scores to map out a larger emotional space of rage faces. We eventually had to abandon this idea due to poor word coverage in the dataset, and wound up using the musicmetric sentiment analyzer instead. The happy&lt;-&gt;angry continuum provides enough meat for a few chuckles in the demo session, but lacks the nuance necessary to accurately include some of the <a href="http://alltheragefaces.com/face/sweet-jesus">more</a> <a href="http://alltheragefaces.com/face/surprised-gasp">interesting</a> <a href="http://alltheragefaces.com/face/fuck-that-bitch-yao-ming">rage</a> <a href="http://alltheragefaces.com/face/okay-okay-clean">faces</a>.</p>
+<p>Relying on five different web services definitely has its drawbacks: there’s a large amount of lag between song selection and playback. Implementing a local sentiment analyzer would go a long way toward improving responsiveness, and might be a good project for some subsequent hackathon.</p></blockquote>
