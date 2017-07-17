@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="project-title">{{ page.title | escape}} </h1>
+    <h2 class="project-creator-names">{{ page.creator_names | escape}}</h2>
+    <h3 class="project-date">{{ page.date | date: '%B %d, %Y' | escape }}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
