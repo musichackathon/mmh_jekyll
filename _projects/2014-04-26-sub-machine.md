@@ -1,4 +1,5 @@
 ---
+layout: project
 date: 2014-04-26
 title: "Sub Machine"
 creator_names: ["Andres Marin"]

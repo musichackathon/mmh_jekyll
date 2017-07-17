@@ -1,4 +1,5 @@
 ---
+layout: project
 date: 2014-04-26
 title: "Hong Kong Bloops"
 creator_names: ["Brian McFee"]

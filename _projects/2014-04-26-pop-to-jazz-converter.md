@@ -1,4 +1,5 @@
 ---
+layout: project
 date: 2014-04-26
 title: "Pop to Jazz Converter"
 creator_names: ["C.J. Carr", "Brian McFee"]
