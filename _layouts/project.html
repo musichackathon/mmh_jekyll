@@ -3,13 +3,23 @@ layout: default
 ---
 <article class="post">
   <header class="post-header">
-    <h1 class="project-title">{{ project.title | escape}} </h1>
-    <h2 class="project-creator-names">
-      {% for name in project.creator_names %}
-        {{ name | append:" " | escape }}
-      {% end for %}
-    </h2>
-    <h3 class="project-date">{{ project.date | date: '%B %d, %Y' | escape }}
+    <h1 class="project-title">{{ page.title | escape }}</h1>
+
+    {%
+      assign creatorNames = (page.creator_names | sort )
+    %}
+
+    {% for cname in creatorNames %}
+      {% if forloop.last == true %}
+        <h2>{{ cname }}</h2>
+      {% else %}
+        <h2>{{ cname }},</h2>
+      {% endif %}
+    {% endfor %}
+
+    <h3 class="project-date">
+      {{ page.date | date: '%B %d, %Y' | escape }}
+    </h3>
   </header>
 
   <div class="post-content">
