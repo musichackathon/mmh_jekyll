@@ -18,7 +18,7 @@ layout: default
     {% endfor %}
 
     <h3 class="project-date">
-      {{ page.date | date: '%B %d, %Y' | escape }}
+      {{ page.date | date: site.date_format }}
     </h3>
   </header>
 
