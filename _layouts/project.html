@@ -5,17 +5,9 @@ layout: default
   <header class="post-header">
     <h1 class="project-title">{{ page.title | escape }}</h1>
 
-    {%
-      assign creatorNames = (page.creator_names | sort )
-    %}
-
-    {% for cname in creatorNames %}
-      {% if forloop.last == true %}
-        <h2>{{ cname }}</h2>
-      {% else %}
-        <h2>{{ cname }},</h2>
-      {% endif %}
-    {% endfor %}
+    <h2 class="project-creator-names">
+      {{ page.creator_names | sort | join: ', ' }}
+    </h2>
 
     <h3 class="project-date">
       {{ page.date | date: site.date_format }}
