@@ -1,5 +1,4 @@
 ---
-layout: project
 date: 2014-04-26
 title: "Acoustic-Driven Synthesizer"
 creator_names: ["Dylan Sherry"]
