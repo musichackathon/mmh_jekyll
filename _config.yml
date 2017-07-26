@@ -41,17 +41,14 @@ exclude:
 
 defaults:
   - scope:
-      path: ""
       type: events
     values:
       layout: event
   - scope:
-      path: ""
       type: projects
     values:
       layout: project
   - scope:
-      path: ""
       type: resources
     values:
       layout: resource
