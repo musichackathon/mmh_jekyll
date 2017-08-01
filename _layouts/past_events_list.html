@@ -14,7 +14,7 @@ layout: default
 
   {% for year in pastEventsByYear %}
     <h1 class="page-heading">{{ year.name }}</h1>
-      <ul class="post-list">
+      <ul class="item-list">
         {% assign events = year.items | reverse %}
         {% for event in events %}
           <li>

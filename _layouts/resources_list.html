@@ -8,12 +8,10 @@ layout: default
 
   {{ content }}
 
-  <ul>
+  <ul class="item-list">
     {% for resource in site.resources %}
       <li>
-        <h2>
-          <a href="{{ resource.url | relative_url }}">{{ resource.name | escape }}</a>
-        </h2>
+        <h2><a class="item-link" ref="{{ resource.url | relative_url }}">{{ resource.name | escape }}</a></h2>
       </li>
     {% endfor %}
   </ul>

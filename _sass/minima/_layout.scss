@@ -183,7 +183,7 @@
   @include relative-font-size(1.25);
 }
 
-.post-list {
+.item-list {
   margin-left: 0;
   list-style: none;
 
@@ -192,12 +192,12 @@
   }
 }
 
-.post-meta {
+.item-meta {
   font-size: $small-font-size;
   color: $grey-color;
 }
 
-.post-link {
+.item-link {
   display: block;
   @include relative-font-size(1.5);
 }
@@ -205,13 +205,13 @@
 
 
 /**
- * Posts
+ * Item pages: Events, Resources, Projects, Blog posts
  */
-.post-header {
+.item-header {
   margin-bottom: $spacing-unit;
 }
 
-.post-title {
+.item-title {
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
@@ -221,7 +221,7 @@
   }
 }
 
-.post-content {
+.item-content {
   margin-bottom: $spacing-unit;
 
   h2 {

@@ -10,7 +10,7 @@ layout: default
 
   <h1 class="page-heading">Future events</h1>
 
-  <ul class="post-list">
+  <ul class="item-list">
     {% assign futureEvents = (site.events | where_exp:"event", "event.date >= site.time") | sort 'date' %}
     {% for event in futureEvents %}
       <li>

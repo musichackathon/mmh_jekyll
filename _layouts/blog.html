@@ -10,13 +10,13 @@ layout: default
 
   {{ content }}
 
-  <ul class="post-list">
+  <ul class="item-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: site.date_format }}</span>
+        <span class="item-meta">{{ post.date | date: site.date_format }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <a class="item-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
           {{post.excerpt}}
         </h2>
       </li>
