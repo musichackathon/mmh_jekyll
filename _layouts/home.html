@@ -6,9 +6,7 @@ layout: default
 
    <img class="mmh-logo" src="/assets/img/logo_256.svg" alt="Monthly Music Hackathon logo featuring crossed axes on a blue vinyl record">
 
-  <div class="page-content">
-    {{ content }}
-  </div>
+  {{ content }}
 
   <h2 class="item-list-heading">Upcoming events</h2>
   {% assign nextEvents = ((site.events | where_exp:"event", "event.date >= site.time") | sort: 'date' %}
