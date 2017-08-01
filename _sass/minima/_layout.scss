@@ -179,8 +179,16 @@
   padding: $spacing-unit 0;
 }
 
-.page-heading {
-  @include relative-font-size(1.25);
+.page-header {
+  margin-bottom: 2 * $spacing-unit;
+}
+
+.page-title {
+  @include relative-font-size(2.5);
+}
+
+.item-list-heading {
+  @include relative-font-size(1.5);
 }
 
 .item-list {
@@ -195,6 +203,7 @@
 .item-meta {
   font-size: $small-font-size;
   color: $grey-color;
+  line-height: 1;
 }
 
 .item-link {
@@ -214,7 +223,7 @@
 .item-title {
   @include relative-font-size(2.625);
   letter-spacing: -1px;
-  line-height: 1;
+  line-height: 2;
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);

@@ -2,9 +2,10 @@
 layout: default
 ---
 
-<div class="home wrapper">
-
-  <h1 class="page-heading">Past events</h1>
+<div>
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+  </header>
 
   {{ content }}
 
@@ -13,7 +14,7 @@ layout: default
           | sort: 'name' | reverse %}
 
   {% for year in pastEventsByYear %}
-    <h1 class="page-heading">{{ year.name }}</h1>
+    <h2 class="item-list-heading">{{ year.name }}</h2>
       <ul class="item-list">
         {% assign events = year.items | reverse %}
         {% for event in events %}

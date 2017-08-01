@@ -1,18 +1,15 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
+<article>
   <header class="item-header">
     <h1 class="item-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="item-meta">{{ page.creator_names | join: ', ' }}</p>
     <p class="item-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
+        {{ page.date | date: site.date_format }}
       </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
+    </p>
   </header>
 
   <div class="item-content" itemprop="articleBody">

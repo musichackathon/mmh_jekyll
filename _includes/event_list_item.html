@@ -1,6 +1,7 @@
 {% if include.event %}
-  <span class="item-meta">{{ include.event.date | date: site.date_format }}</span>
+  
   <h2><a class="item-link" href="{{ include.event.url | relative_url }}">{{ include.event.title | escape }}</a></h2>
+  <p class="item-meta">{{ include.event.date | date: site.date_format }}</p>
   {% if include.event.description %}
     <p class="item-meta">{{ include.event.description }}</p>
   {% endif %}

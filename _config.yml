@@ -40,23 +40,32 @@ exclude:
 
 defaults:
   - scope:
-      type: events
+      path: ""
+      type: "posts"
     values:
-      layout: event
+      layout: "collection/post"
   - scope:
-      type: projects
+      path: ""
+      type: "events"
     values:
-      layout: project
+      layout: "collection/event"
   - scope:
-      type: resources
+      path: ""
+      type: "projects"
     values:
-      layout: resource
+      layout: "collection/project"
+  - scope:
+      path: ""
+      type: "resources"
+    values:
+      layout: "collection/resource"
 
 collections:
   events:
     output: true
     permalink: /:collection/:year-:month-:day/
   posts:
+    output: true
     permalink: /blog/:year-:month-:day-:title/
   projects:
     output: true
