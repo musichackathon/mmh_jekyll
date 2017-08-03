@@ -12,6 +12,27 @@
   padding: $spacing-unit 0;
 }
 
+.page-content-col-wrapper {
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix
+}
+
+.page-content-col {
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+  width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-palm) {
+  .page-content-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
 .page-header {
   margin-bottom: 2 * $spacing-unit;
 }
@@ -43,8 +64,6 @@
   display: block;
   @include relative-font-size(1.5);
 }
-
-
 
 /**
  * Item pages: Events, Resources, Projects, Blog posts

@@ -8,12 +8,20 @@ layout: default
 
   {{ content }}
 
-  <h2 class="item-list-heading">Upcoming events</h2>
-  {% assign nextEvents = ((site.events | where_exp:"event", "event.date >= site.time") | sort: 'date' %}
-  {% include event_list.html events=nextEvents limit=3 %}
+  <div class="page-content-col-wrapper">
+    <div class="page-content-col">
+      <h2 class="item-list-heading">Upcoming events</h2>
+      {% assign nextEvents = 
+          ((site.events | where_exp:"event", "event.date >= site.time") | sort: 'date' %}
+      {% include event_list.html events=nextEvents limit=3 %}
+    </div>
 
-  <h2 class="item-list-heading">Recent events</h2>
-  {% assign pastEvents = ((site.events | where_exp:"event", "event.date <= site.time") | sort: 'date' | reverse %}
-  {% include event_list.html events=pastEvents limit=2 %}
+    <div class="page-content-col">
+      <h2 class="item-list-heading">Recent events</h2>
+      {% assign pastEvents = 
+          ((site.events | where_exp:"event", "event.date <= site.time") | sort: 'date' | reverse %}
+      {% include event_list.html events=pastEvents limit=2 %}
+    </div>
+  </div>
 
 </div>
