@@ -26,6 +26,7 @@ email_list_signup_url: "http://monthlymusichackathon.us5.list-manage1.com/subscr
 eventbrite_url: "https://www.eventbrite.com/o/monthly-music-hackathon-nyc-2470452960"
 timezone: America/New_York
 date_format: "%b %-d, %Y"
+short_date_format: "%b %-d"
 time_format: "%I:%M %P"
 future: true
 
