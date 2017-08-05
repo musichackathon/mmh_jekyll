@@ -2,7 +2,16 @@
  * Home
  */
 .mmh-logo {
+  width: 100%;
+  margin-bottom: $spacing-unit / 2;
+}
 
+.mmh-home-description {
+  margin-bottom: $spacing-unit;
+  font-size: $medium-font-size;
+  color: $grey-color-dark;
+  border-top: 5px solid $mmh-blue;
+  border-bottom: 5px solid $mmh-blue;
 }
 
 /**
