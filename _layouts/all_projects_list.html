@@ -2,7 +2,10 @@
 layout: default
 ---
 
-<div class="home wrapper">
+<div>
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+  </header>
 
   {{ content }}
 
@@ -11,7 +14,7 @@ layout: default
           | sort: 'name' | reverse %}
 
   {% for projectsOnDate in projectsGroupedByDate %}
-    <h2 class="page-heading">{{ projectsOnDate.name }}</h2>
+    <h2 class="item-list-title">{{ projectsOnDate.name }}</h2>
     {% include projects_list.html projects=projectsOnDate.items %}
   {% endfor %}
 </div>
