@@ -15,10 +15,8 @@ layout: default
     {% for post in site.posts %}
       <li>
         <span class="item-meta">{{ post.date | date: site.date_format }}</span>
-        <h2>
-          <a class="item-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          {{post.excerpt}}
-        </h2>
+        <h2><a class="item-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+        <p>{{post.excerpt}}<p>
       </li>
     {% endfor %}
   </ul>
