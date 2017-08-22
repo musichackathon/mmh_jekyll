@@ -17,8 +17,7 @@ title: "Monthly Music Hackathon"
 email: musichackathon@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   At Monthly Music Hackathon NYC, musicians, programmers, artists, scientists, composers, hardware tinkerers, and others spend the last Saturday of each month hacking together projects exploring music. At 8pm we have a concert and presentations of the art, technology, and research developed that day. It's open to everyone. Please come participate or observe.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://monthlymusichackathon.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: musichackathon
 github_username: musichackathon
 github_repo: mmh_jekyll
@@ -27,6 +26,7 @@ email_list_signup_url: "http://monthlymusichackathon.us5.list-manage1.com/subscr
 eventbrite_url: "https://www.eventbrite.com/o/monthly-music-hackathon-nyc-2470452960"
 timezone: America/New_York
 date_format: "%b %-d, %Y"
+short_date_format: "%b %-d"
 time_format: "%I:%M %P"
 future: true
 
@@ -42,20 +42,31 @@ exclude:
 defaults:
   - scope:
       path: ""
-      type: events
+      type: "posts"
     values:
-      layout: event
+      layout: "collection/post"
   - scope:
       path: ""
-      type: resources
+      type: "events"
     values:
-      layout: resource
+      layout: "collection/event"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "collection/project"
+  - scope:
+      path: ""
+      type: "resources"
+    values:
+      layout: "collection/resource"
 
 collections:
   events:
     output: true
     permalink: /:collection/:year-:month-:day/
   posts:
+    output: true
     permalink: /blog/:year-:month-:day-:title/
   projects:
     output: true

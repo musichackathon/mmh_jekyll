@@ -1,5 +1,5 @@
 {% if include.projects %}
-  <ul class="post-list">
+  <ul class="item-list">
     {% assign sortedProjects = include.projects | sort: 'title' %}
     {% for project in sortedProjects %}
       <li>

@@ -2,16 +2,28 @@
 layout: default
 ---
 
-<div class="home">
+<div>
 
-  {{ content }}
+   <img class="mmh-logo" src="/assets/img/home_background.png" alt="Monthly Music Hackathon logo featuring crossed axes on a blue vinyl record">
 
-  <h1>Next event</h1>
-  {% assign nextEvents = ((site.events | where_exp:"event", "event.date >= site.time") | sort: 'date' %}
-  {% include event_list_item.html event=nextEvents.first %}
+  <div class="mmh-home-description">
+    {{site.description}}
+  </div>
 
-  <h1>Last event</h1>
-  {% assign pastEvents = ((site.events | where_exp:"event", "event.date <= site.time") | sort: 'date' | reverse %}
-  {% include event_list_item.html event=pastEvents.first %}
+  <div class="page-content-col-wrapper">
+    <div class="page-content-col">
+      <h2 class="item-list-heading">Upcoming events</h2>
+      {% assign nextEvents = 
+          ((site.events | where_exp:"event", "event.date >= site.time") | sort: 'date' %}
+      {% include event_list.html events=nextEvents limit=3 %}
+    </div>
+
+    <div class="page-content-col">
+      <h2 class="item-list-heading">Recent events</h2>
+      {% assign pastEvents = 
+          ((site.events | where_exp:"event", "event.date <= site.time") | sort: 'date' | reverse %}
+      {% include event_list.html events=pastEvents limit=2 %}
+    </div>
+  </div>
 
 </div>
