@@ -5,7 +5,7 @@ permalink: /about/
 navigation_order: 6
 ---
 
-Monthly Music Hackathon NYC is a monthly all-day event for musicians and engineers to create new music-related projects from scratch, develop them throughout ~10 hours, then perform or present them in a concert in the evening.
+Monthly Music Hackathon NYC is a monthly all-day event for musicians and engineers to create new music-related projects from scratch, develop them throughout ~6 hours, then perform or present them in a concert in the evening.
 
 # FAQ
 
@@ -15,7 +15,7 @@ Everyone is welcome.  Expect a crazy frenzy of experimentation.
 
 ## Who should go to build a hack?
 
-Anyone who wants to make something related to music.
+**Anyone** who wants to make something related to music.
 
 Musicians with little experience with hands on technology who want to meet and collaborate with techies, and have the experience of working through new ideas quickly and practicing finishing projects.
 
@@ -25,7 +25,7 @@ Programmers, engineers, and scientists with an interest in any aspect of music.
 
 ## What can I make?
 
-Wiktionary gives one definition of hack as “To work on an intimately technical level”  (http://en.wiktionary.org/wiki/hack).  An appropriate hack at this event would work on an intimately technical level with any subject surrounding music, such as making sound, making instruments, making compositions, analysis of a piece of music, analysis of a music collection, analysis of music listening data, making music presentation platforms, making music sharing apps, making music sales apps, etc, etc, etc…
+Wiktionary gives one definition of [hack](http://en.wiktionary.org/wiki/hack) as “To work with on an intimately technical level.”  An appropriate hack at this event would work on an intimately technical level with any subject surrounding music, such as making sound, making instruments, making compositions, analysis of a piece of music, analysis of a music collection, analysis of music listening data, making music presentation platforms, making music sharing apps, making music sales apps, etc, etc, etc…
 
 ## What can’t I make?
 
@@ -39,7 +39,7 @@ No, there are no expectations about participants’ skills or goals at Monthly M
 
 ## How many projects are there?  Do I have to collaborate?
 
-It’s up to you whether you work on your own project, come with collaborators to work with, find collaborators beforehand via the mailing list or Twitter or Hacker League, or hope to meet collaborators in person at the hackathon.  You can post a project idea and/or skills you bring to the table on Hacker League if you want.
+It’s up to you whether you work on your own project, come with collaborators to work with, find collaborators beforehand via Twitter or the relevant Facebook event page, or hope to meet collaborators in person at the hackathon.  
 
 We will, however, all collaborate at the end of the day on crafting the flow of the concert/presentations.
 
@@ -65,7 +65,7 @@ The person or people who created the work retain ownership of the work.
 
 ## When does it happen?
 
-Usually the last Saturday of every month from either 10 AM or Noon till ~10 PM. Sometimes we have talks or other events the night before, and sometimes we bleed into Sunday. Stay tuned to the mailing list for details, or check our blog.
+Usually one Saturday of every month from around Noon till ~9 PM. Sometimes we have talks or other events the night before, and sometimes we bleed into Sunday. Stay tuned to the mailing list for details, or check our blog.
 
 ## Where does it happen?
 
@@ -73,7 +73,7 @@ It’s in a different place in New York City each month. Stay tuned to the maili
 
 ## Why are you doing this?
 
-Anyone who’s attended any of the awesome Music Hackdays (http://musichackday.org) knows they are super fun events.  But they are infrequent.  There have been other music-focused hackathons in New York since then, but they tend to be geared toward the music industry, advertising, and recruiting.  There’s nothing inherently wrong with those things, but it seems like there is a desire in the NYC music tech community to have these events more often, focus more on creativity, and make artists feel welcome.
+Anyone who’s attended any of the awesome [Music Hackdays](http://musichackday.org) knows they are super fun events.  But they are infrequent.  There have been other music-focused hackathons in New York since then, but they tend to be geared toward the music industry, advertising, and recruiting.  There’s nothing inherently wrong with those things, but it seems like there is a desire in the NYC music tech community to have these events more often, focus more on creativity, and make artists feel welcome.
 
 For me personally, I have a ton of music tech projects on the back burner that I don’t get a chance to work on.  Blocking off an entire day once a month to focus on these projects will encourage habits of creativity and productivity.
 
@@ -100,4 +100,3 @@ The organizers of Monthly Music Hackathon NYC are an eclectic mix of musicians, 
 Yes! If you want to help decide what the future of Monthly Music Hackathon NYC will be, and want to work to make it happen, please get in touch!
 
 For more info, email us at [{{site.email}}](mailto:{{site.email}}) or contact us on Twitter [@{{site.twitter_username}}](https://twitter.com/{{site.twitter_username}}).
-
