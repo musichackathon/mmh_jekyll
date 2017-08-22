@@ -8,6 +8,13 @@ navigation_order: 6
 Monthly Music Hackathon NYC is a monthly all-day event for musicians and engineers to create new music-related projects from scratch, develop them throughout ~10 hours, then perform or present them in a concert in the evening.
 
 # FAQ
+{:.no_toc}
+
+A test paragraph.
+Does kramdown work?
+{:.bold}
+
+{:toc}
 
 ## Who should go to the concert?
 
@@ -100,4 +107,3 @@ The organizers of Monthly Music Hackathon NYC are an eclectic mix of musicians, 
 Yes! If you want to help decide what the future of Monthly Music Hackathon NYC will be, and want to work to make it happen, please get in touch!
 
 For more info, email us at [{{site.email}}](mailto:{{site.email}}) or contact us on Twitter [@{{site.twitter_username}}](https://twitter.com/{{site.twitter_username}}).
-
