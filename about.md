@@ -10,11 +10,8 @@ Monthly Music Hackathon NYC is a monthly all-day event for musicians and enginee
 # FAQ
 {:.no_toc}
 
-A test paragraph.
-Does kramdown work?
-{:.bold}
-
-{:toc}
+- TOC
+{: toc}
 
 ## Who should go to the concert?
 
