@@ -2,15 +2,17 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         {% assign upcomingEvents = ((site.events | where_exp:"event", "event.date >= site.time") | sort: 'date' %}
-        {% assign nextEvent = upcomingEvents.first %}
-        <p>Next Event:</p>
-        {% if nextEvent %}
-          <p><a href="{{ nextEvent.url | relative_url }}">{{ nextEvent.title | escape }}</a></p>
+        <p>Upcoming Events:</p>
+        {% if upcomingEvents %}
+          <ul class="footer-event-list">
+          {% for event in upcomingEvents limit: 5 %}
+            <li><a href="{{ nextEvent.url | relative_url }}">
+              {{ event.title | escape }} - {{event.date | date: site.short_date_format}}</a>
+            </li>
+          {% endfor %}
         {% else %}
           <p>Check back soon.</p>
         {% endif %}
@@ -58,14 +60,12 @@
           {% endif %}
           
           {% if site.email %}
-            {% assign email_url = "mailto:" | append: site.email) %}
-            {% include icon-mail.html url=email_url text="Email us" %}
+            <li>
+              {% assign email_url = "mailto:" | append: site.email) %}
+              {% include icon-mail.html url=email_url text="Email us" %}
+            </li>
           {% endif %}
         </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
       </div>
     </div>
 

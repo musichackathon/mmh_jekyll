@@ -2,24 +2,23 @@
 layout: default
 ---
 
-<div class="home wrapper">
+<div>
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+  </header>
 
-  <h1 class="page-heading">Posts</h1>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
   {{ content }}
 
-  <ul class="post-list">
+  <ul class="item-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: site.date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
+        <span class="item-meta">{{ post.date | date: site.date_format }}</span>
+        <h2><a class="item-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+        <p>{{post.excerpt}}<p>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>
