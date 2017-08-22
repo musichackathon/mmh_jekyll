@@ -25,7 +25,7 @@ Programmers, engineers, and scientists with an interest in any aspect of music.
 
 ## What can I make?
 
-Wiktionary gives one definition of [hack](http://en.wiktionary.org/wiki/hack) as “To work with on an intimately technical level.”  An appropriate hack at this event would work on an intimately technical level with any subject surrounding music, such as making sound, making instruments, making compositions, analysis of a piece of music, analysis of a music collection, analysis of music listening data, making music presentation platforms, making music sharing apps, making music sales apps, etc, etc, etc…
+Wiktionary gives one definition of [hack](http://en.wiktionary.org/wiki/hack) as “To work with something on an intimately technical level.”  An appropriate hack at this event would work on an intimately technical level with any subject surrounding music, such as making sound, making instruments, making compositions, analysis of a piece of music, analysis of a music collection, analysis of music listening data, making music presentation platforms, making music sharing apps, making music sales apps, etc, etc, etc…
 
 ## What can’t I make?
 
