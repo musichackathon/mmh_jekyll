@@ -3,15 +3,16 @@
  */
 .mmh-logo {
   width: 100%;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $half-spacing-unit;
 }
 
 .mmh-home-description {
   margin-bottom: $spacing-unit;
   font-size: $medium-font-size;
-  color: $grey-color-dark;
-  border-top: 5px solid $mmh-blue;
-  border-bottom: 5px solid $mmh-blue;
+  color: #000;
+  border-top: 2px solid $mmh-blue;
+  border-bottom: 2px solid $mmh-blue;
+  background-color: lighten($grey-color, 45%);
 }
 
 /**
@@ -33,23 +34,23 @@
 }
 
 .page-content-col-wrapper {
-  margin-left: -$spacing-unit / 2;
+  margin-left: -$half-spacing-unit;
   @extend %clearfix
 }
 
 .page-content-col {
   float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
-  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-  width:         calc(50% - (#{$spacing-unit} / 2));
+  margin-bottom: $half-spacing-unit;
+  padding-left: $half-spacing-unit;
+  width: -webkit-calc(50% - (#{$half-spacing-unit}));
+  width:         calc(50% - (#{$half-spacing-unit}));
 }
 
 @include media-query($on-palm) {
   .page-content-col {
     float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(100% - (#{$half-spacing-unit}));
+    width:         calc(100% - (#{$half-spacing-unit}));
   }
 }
 
@@ -58,11 +59,12 @@
 }
 
 .page-title {
-  @include relative-font-size(2.5);
+  font-size: $page-title-font-size;
+  line-height: $base-line-height;
 }
 
 .item-list-heading {
-  @include relative-font-size(1.5);
+  font-size: $large-font-size;
 }
 
 .item-list {
@@ -82,7 +84,7 @@
 
 .item-link {
   display: block;
-  @include relative-font-size(1.5);
+  font-size: $large-font-size;
 }
 
 /**
@@ -93,41 +95,9 @@
 }
 
 .item-title {
-  @include relative-font-size(2.625);
-  letter-spacing: -1px;
-  line-height: 2;
-
-  @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
-  }
+  font-size: $extra-large-font-size;
 }
 
 .item-content {
   margin-bottom: $spacing-unit;
-
-  h2 {
-    @include relative-font-size(2);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
-    }
-  }
-
-  h3 {
-    @include relative-font-size(1.625);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.375);
-    }
-  }
-
-  h4 {
-    @include relative-font-size(1.25);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.125);
-    }
-  }
-
-
 }
