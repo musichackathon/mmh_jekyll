@@ -28,10 +28,8 @@ layout: default
     {% if page.rsvp %}
       <p class="item-meta"><a href="{{page.rsvp}}">Registration</a></p>
     {% endif %}
-    <p class="item-meta">
-      <span itemprop="freeStatement">
+    <p class="item-meta" itemprop="isAccessibleForFree" content="True">
       Free. All are welcome!
-    </span>
     </p>
   </header>
   {% if page.image %}
