@@ -18,6 +18,17 @@
 /**
  * Page content
  */
+ #markdown-toc {
+   border-top: 1px solid $grey-color;
+   border-bottom: 1px solid $grey-color;
+   background-color: lighten($grey-color, 45%);
+   padding-top: $half-spacing-unit;
+   padding-bottom: $half-spacing-unit;
+   margin-left: 0;
+   list-style: none;
+   font-size: $small-font-size;
+ }
+
 .page-content {
   padding: $spacing-unit 0;
 }
