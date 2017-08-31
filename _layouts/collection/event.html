@@ -28,7 +28,11 @@ layout: default
     {% if page.rsvp %}
       <p class="item-meta"><a href="{{page.rsvp}}">Registration</a></p>
     {% endif %}
-    <p class="item-meta">Free. All are welcome!</p>
+    <p class="item-meta">
+      <span itemprop="freeStatement">
+      Free. All are welcome!
+    </span>
+    </p>
   </header>
   {% if page.image %}
     <img src="/assets/events/{{page.image}}" alt="{{page.title}} flyer"/>
