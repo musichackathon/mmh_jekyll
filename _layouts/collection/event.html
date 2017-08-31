@@ -5,13 +5,11 @@ layout: default
 
   <header class="item-header">
     <h1 class="item-title">{{ page.title | escape }}</h1>
-
     {% if page.address %}
       <p class="item-meta" itemprop="location address" itemscope itemtype="http://schema.org/PostalAddress">
         {{page.address}}
       </p>
     {% endif %}
-
     {% if page.days %}
     {% for day in page.days %}
         <p class="item-meta" >
@@ -33,16 +31,13 @@ layout: default
     <p class="item-meta">Free. All are welcome!</p>
   </header>
   </br>
-
   {% if page.image %}
     <img src="/assets/events/{{page.image}}" alt="{{page.title}} flyer"/>
   </br>
   {% endif %}
-
   <div class="item-content" itemprop="description about">
     {{ content }}
   </div>
-
   {% assign eventDate = page.date | date_to_string %}
   {% assign projectsGroupedByDate = site.projects | group_by_exp:"project", "project.date | date_to_string" %}
   {% assign eventProjects = projectsGroupedByDate | where: "name", eventDate | first %}
@@ -50,5 +45,4 @@ layout: default
     <h3>Projects from this event</h3>
     {% include projects_list.html projects=eventProjects.items %}
   {% endif %}
-
 </article>
