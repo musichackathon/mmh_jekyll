@@ -6,8 +6,6 @@ layout: default
   <header class="item-header">
     <h1 class="item-title">{{ page.title | escape }}</h1>
 
-    <p class="item-meta">Free. All are welcome!</p>
-    
     {% if page.address %}
       <p class="item-meta" itemprop="location address" itemscope itemtype="http://schema.org/PostalAddress">
         {{page.address}}
@@ -32,6 +30,7 @@ layout: default
     {% if page.rsvp %}
       <p class="item-meta"><a href="{{page.rsvp}}">Registration</a></p>
     {% endif %}
+    <p class="item-meta">Free. All are welcome!</p>
   </header>
   </br>
 
