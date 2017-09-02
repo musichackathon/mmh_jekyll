@@ -6,8 +6,10 @@ layout: default
   <header class="item-header">
     <h1 class="item-title">{{ page.title | escape }}</h1>
     {% if page.address %}
-      <p class="item-meta" itemprop="location address" itemscope itemtype="http://schema.org/PostalAddress">
-        {{page.address}}
+      <p class="item-meta" itemprop="location" itemscope itemtype="http://schema.org/Place">
+        <span itemprop="address" itemscope itemtype="http://schema.org/Text">
+          {{page.address}}
+        </span>
       </p>
     {% endif %}
     {% if page.days %}
