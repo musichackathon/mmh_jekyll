@@ -4,7 +4,7 @@ layout: default
 <article itemscope itemtype="http://schema.org/Event">
 
   <header class="item-header">
-    <h1 class="item-title">{{ page.title | escape }}</h1>
+    <h1 class="item-title" itemprop="name">{{ page.title | escape }}</h1>
     {% if page.address %}
       <p class="item-meta" itemprop="location" itemscope itemtype="http://schema.org/Place">
         <span itemprop="address" itemscope itemtype="http://schema.org/Text">
