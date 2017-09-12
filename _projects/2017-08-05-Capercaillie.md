@@ -12,3 +12,5 @@ python, pysox, audacity (to clean up the original sample and do some minor edits
 Check out the project [here](https://github.com/jonathanmarmor/capercaillie).
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/336643049&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+To learn more about this project, reach out to [Jonathan Marmor](http://jonathanmarmor.com/).
