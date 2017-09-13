@@ -10,3 +10,5 @@ Can you bang out funky beats with alumninum foil and a cardboard keyboard? Liam 
 
 The technologies used in this project include:
 FunKey FunKey board, p5.js programming.
+
+To learn more about this project, contact [Liam Baum](https://twitter.com/mrbombmusic).
