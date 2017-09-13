@@ -11,3 +11,5 @@ The technologies used in this project include:
 Spotify API.
 
 Check out the project [here](https://github.com/leebrother).
+
+To learn more about this project, contact [Patrick Lee](mailto:leebrother@hotmail.com).
