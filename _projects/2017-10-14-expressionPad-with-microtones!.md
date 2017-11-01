@@ -14,7 +14,4 @@ The project took the [expressionPad](http://expressionpad.com) app, which is a m
 The technologies used in this project include:
 expressionPad, AudioKit, Swift.
 
-
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://soundcloud.com/lifeisvile"></iframe>
-
 To learn more about this project, reach out to [Charlie Deck](https://twitter.com/bigblueboo) and [Devon Aviles](https://twitter.com/potatoenfuego).
