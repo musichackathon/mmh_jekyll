@@ -4,7 +4,7 @@ date:   2017-10-14 12:00:00 -0400
 categories: update
 ---
 The [New Musical Instruments Hackathon]({{site.baseurl}}{% link _events/2017-10-14.md %}), held on October 14, presented an opportunity for attendees to explore novel ways of making music, noise, and sound.
-
+![Attendees of the New Musical Instruments Hackathon, listening to the speaker at the very beginning of the event. They sit at tables, all facing towards the front of the room, and their faces are visible.](\assets\events\20171014\DSCF8821.JPG)
 The event began with a series of speakers, who explained how their various projects correlated with
 new musical instruments. Our first speaker, [Kate Sicchio](http://blog.sicchio.com), opened participants up to the idea of using body motions and music technology to create interesting sounds and performances.
 
