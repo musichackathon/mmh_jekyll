@@ -13,7 +13,11 @@ new musical instruments. Our first speaker, [Kate Sicchio](http://blog.sicchio.c
 The next speaker, [Ranjit Bhatnagar](http://moonmilk.com), explained how, over 10 years, he has worked on his *Instrument-A-Day* project.
 ![Ranjit Bhatnagar speaks into the microphone as he explains how one of his instruments works. The background image contains a modified guitar, a set of chime-like objects, and a red mat with additions to it. All are part of this particular instrument display. ](/assets/events/20171014/DSCF8706_rotate.JPG)
 
-Following Ranjit, []
+Following Ranjit, [Asha Iwanowicz](http://ashasounds.com) introduced participants to the concept of taking sound samples from the world around us and using them as instruments in modern music.
+![Asha Iwanowicz stands at the podium, behind her laptop. She holds the mic and listens with the audience as her music plays.](\assets\events\20171014\DSCF8739_rotate.JPG)
+
+Next, [Lainie Fefferman](http://lainiefefferman.com) explained to participants how she herself found an instrument that fit her performance goals.
+![A headshot of Lainie Fefferman, holding the microphone and standing in front of the screen.](\assets\events\20171014\DSCF8772.JPG)
 
 Hacking ended at 8 PM. Many participants presented their work from the day. To view the final presentations, watch the twitter video below. All projects related to the theme are displayed on the [event page]({{site.baseurl}}{% link _events/2017-10-14.md %}) and under [projects]({{site.baseurl}}{% link projects.md %}).
 
