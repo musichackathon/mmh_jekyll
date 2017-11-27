@@ -26,6 +26,9 @@ Next, [Lainie Fefferman](http://lainiefefferman.com) explained to participants h
 She introduced the participants to the concept of modifying traditional instruments, using her viola as an electric guitar.
 ![Anni Rossi speaks into the microphone while showing off her viola-guitar hybrid instrument. She holds it in front of her body, and the strings, fret board, log body, amp connection, and guitar-like tuning pegs are all visible. ](\assets\events\20171014\DSCF8839.JPG)
 
+After the talks ended, some participants broke into pre-arranged groups while others brain-stormed their projects as a group. Others waited and mingled while waiting for workshops to begin.
+![Participants are clustered in multiple groups at the end of the brainstorming session. They discuss potential hacks. One participants moves around the circular yellow couch in the center of the room, around which the brainstorming circle was centered.   ](\assets\events\20171014\DSCF8887.JPG)
+
 Hacking ended at 8 PM. Many participants presented their work from the day. To view the final presentations, watch the twitter video below. All projects related to the theme are displayed on the [event page]({{site.baseurl}}{% link _events/2017-10-14.md %}) and under [projects]({{site.baseurl}}{% link projects.md %}).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://t.co/BFJ3wSSAkt">https://t.co/BFJ3wSSAkt</a></p>&mdash; Music Hackathon (@musichackathon) <a href="https://twitter.com/musichackathon/status/919352840241364992?ref_src=twsrc%5Etfw">October 15, 2017</a></blockquote>
