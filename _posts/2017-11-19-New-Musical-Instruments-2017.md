@@ -22,6 +22,10 @@ Next, [Lainie Fefferman](http://lainiefefferman.com) explained to participants h
 [Red Wierenga](https://roli.com/products/blocks) was the second to last speaker. He explained how participants could customize the BLOCKS program, and by doing so, make their own instruments.
 ![Red Wierenga speaks into the microphone and gesticulates. He stands in front of the screen, which shows the code used to modify BLOCKS and create your own sounds. ](\assets\events\20171014\DSCF8812.JPG)
 
+[Anni Rossi](https://www.annirossi.com) closed out the talks.
+She introduced the participants to the concept of modifying traditional instruments, using her viola as an electric guitar.
+![Anni Rossi speaks into the microphone while showing off her viola-guitar hybrid instrument. She holds it in front of her body, and the strings, fret board, log body, amp connection, and guitar-like tuning pegs are all visible. ](\assets\events\20171014\DSCF8839.JPG)
+
 Hacking ended at 8 PM. Many participants presented their work from the day. To view the final presentations, watch the twitter video below. All projects related to the theme are displayed on the [event page]({{site.baseurl}}{% link _events/2017-10-14.md %}) and under [projects]({{site.baseurl}}{% link projects.md %}).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://t.co/BFJ3wSSAkt">https://t.co/BFJ3wSSAkt</a></p>&mdash; Music Hackathon (@musichackathon) <a href="https://twitter.com/musichackathon/status/919352840241364992?ref_src=twsrc%5Etfw">October 15, 2017</a></blockquote>
