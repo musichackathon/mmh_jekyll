@@ -33,3 +33,6 @@ Hacking ended at 8 PM. Many participants presented their work from the day. To v
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://t.co/BFJ3wSSAkt">https://t.co/BFJ3wSSAkt</a></p>&mdash; Music Hackathon (@musichackathon) <a href="https://twitter.com/musichackathon/status/919352840241364992?ref_src=twsrc%5Etfw">October 15, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Thank you to everyone, participants, speakers, organizers, and volunteers, who helped make this event a success. We hope to see you at our next event, this December!
+![The morning volunteer team gathered at the beginning of the event.](assets\events\20171014\DSCF8647.JPG)
