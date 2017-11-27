@@ -19,6 +19,9 @@ Following Ranjit, [Asha Iwanowicz](http://ashasounds.com) introduced participant
 Next, [Lainie Fefferman](http://lainiefefferman.com) explained to participants how she herself found an instrument that fit her performance goals.
 ![A headshot of Lainie Fefferman, holding the microphone and standing in front of the screen.](\assets\events\20171014\DSCF8772.JPG)
 
+[Red Wierenga](https://roli.com/products/blocks) was the second to last speaker. He explained how participants could customize the BLOCKS program, and by doing so, make their own instruments.
+![Red Wierenga speaks into the microphone and gesticulates. He stands in front of the screen, which shows the code used to modify BLOCKS and create your own sounds. ](\assets\events\20171014\DSCF8812.JPG)
+
 Hacking ended at 8 PM. Many participants presented their work from the day. To view the final presentations, watch the twitter video below. All projects related to the theme are displayed on the [event page]({{site.baseurl}}{% link _events/2017-10-14.md %}) and under [projects]({{site.baseurl}}{% link projects.md %}).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://t.co/BFJ3wSSAkt">https://t.co/BFJ3wSSAkt</a></p>&mdash; Music Hackathon (@musichackathon) <a href="https://twitter.com/musichackathon/status/919352840241364992?ref_src=twsrc%5Etfw">October 15, 2017</a></blockquote>
