@@ -3,7 +3,7 @@ date: 2017-10-14
 title: Musical Diary
 creator_names: ['Alvin Wen', 'Mikhail Qader', 'Ryan Margono', 'Eren Chen']
 ---
-![Alvin, Mikhail, Ryan, and Eren stand in front of the screen, explaining how Musical Diary works. ](/assets/events/20171014/DSCF9041.jpg)
+![Alvin, Mikhail, Ryan, and Eren stand in front of the screen, explaining how Musical Diary works. ](/assets/events/20171014/alvin_mikhail_ryan_eren.jpg)
 
 Alvin, Mikhail, Ryan, & Eren: *We created a webscraper that take a page, and renders its text as music.*
 
