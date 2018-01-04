@@ -11,7 +11,7 @@ new musical instruments.
 
 Our first speaker, [Kate Sicchio](http://blog.sicchio.com), opened participants up to the idea of using body motions and music technology to create interesting sounds and performances.
 
-![Kate Sicchio explains how she used music technology so that her dance choreography and music were correlated. As she speaks into the mic, a picture of her dancing, as dictated by the live-coding algorithm, is shown.](/assets/events/20171014/DSCF8677_rotate.JPG)
+![Kate Sicchio explains how she used music technology so that her dance choreography and music were correlated. As she speaks into the mic, a picture of her dancing, as dictated by the live-coding algorithm, is shown.](/assets/events/20171014/kate.jpg)
 
 The next speaker, [Ranjit Bhatnagar](http://moonmilk.com), explained how, over 10 years, he has worked on his *Instrument-A-Day* project.
 ![Ranjit Bhatnagar speaks into the microphone as he explains how one of his instruments works. The background image contains a modified guitar, a set of chime-like objects, and a red mat with additions to it. All are part of this particular instrument display. ](/assets/events/20171014/DSCF8706_rotate.JPG)
