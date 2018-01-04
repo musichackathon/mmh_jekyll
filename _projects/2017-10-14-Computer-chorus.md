@@ -3,7 +3,7 @@ date: 2017-10-14
 title: Computer Chorus
 creator_names: ['Katya Rosanova', 'Nicolás Peña-Escarpentier']
 ---
-![Katya and Nicolas present the Computer Chorus. They stand in front of the Graphical User Interface of their demo, and Katya explains a bit of the theory behind how it works. Nicolas stands slightly in front of the screen, and the stenographer's display is in the background. ](/assets/events/20171014/DSCF8954.jpg)
+![Katya and Nicolas present the Computer Chorus. They stand in front of the Graphical User Interface of their demo, and Katya explains a bit of the theory behind how it works. Nicolas stands slightly in front of the screen, and the stenographer's display is in the background. ](/assets/events/20171014/katyaNicolas.jpg)
 
 Katya and Nicolas: *We wanted to create a computer chorus. In the end, it turned into a call and response 'singing' platform. We learned... a lot!*
 
