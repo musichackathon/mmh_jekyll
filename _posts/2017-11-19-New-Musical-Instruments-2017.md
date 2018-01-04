@@ -14,7 +14,7 @@ Our first speaker, [Kate Sicchio](http://blog.sicchio.com), opened participants 
 ![Kate Sicchio explains how she used music technology so that her dance choreography and music were correlated. As she speaks into the mic, a picture of her dancing, as dictated by the live-coding algorithm, is shown.](/assets/events/20171014/kate.jpg)
 
 The next speaker, [Ranjit Bhatnagar](http://moonmilk.com), explained how, over 10 years, he has worked on his *Instrument-A-Day* project.
-![Ranjit Bhatnagar speaks into the microphone as he explains how one of his instruments works. The background image contains a modified guitar, a set of chime-like objects, and a red mat with additions to it. All are part of this particular instrument display. ](/assets/events/20171014/DSCF8706_rotate.JPG)
+![Ranjit Bhatnagar speaks into the microphone as he explains how one of his instruments works. The background image contains a modified guitar, a set of chime-like objects, and a red mat with additions to it. All are part of this particular instrument display. ](/assets/events/20171014/ranjit.jpg)
 
 Following Ranjit, [Asha Iwanowicz](http://ashasounds.com) introduced participants to the concept of taking sound samples from the world around us and using them as instruments in modern music.
 ![Asha Iwanowicz stands at the podium, behind her laptop. She holds the mic and listens with the audience as her music plays.](/assets/events/20171014/DSCF8739_rotate.JPG)
