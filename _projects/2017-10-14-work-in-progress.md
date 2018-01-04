@@ -12,5 +12,4 @@ While Desmond's instrument was fascinating, he hopes to improve it, and have it 
 The technologies used in this project include:
 ios, audiobus.
 
-To stay posted about future progress, contact [Desmond](mailto:desmondsdrum@gmail.com
-).
+To stay posted about future progress, contact [Desmond](mailto:desmondsdrum@gmail.com).
