@@ -3,7 +3,7 @@ date: 2017-10-14
 title: expressionPad with microtones!
 creator_names: ['Charlie Deck', 'Devon Aviles']
 ---
-![Charlie and Devon demoing the capabilities of expressionPad with microtones.](/assets/events/20171014/DSCF8919.jpg)
+![Charlie and Devon demoing the capabilities of expressionPad with microtones.](/assets/events/20171014/charlieDevon.jpg)
 
 Charile & Devon: *We implemented a microtone system in Charlie's existing iOS app, "expressionPad".*
 
