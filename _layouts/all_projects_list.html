@@ -11,7 +11,7 @@ layout: default
 
   {% assign projectsGroupedByDate =
       ((site.projects | group_by_exp:"project", "project.date | date: site.date_format")
-          | sort: 'name' | reverse %}
+          | sort: 'project.date') | reverse %}
 
   {% for projectsOnDate in projectsGroupedByDate %}
     <h2 class="item-list-title">{{ projectsOnDate.name }}</h2>
