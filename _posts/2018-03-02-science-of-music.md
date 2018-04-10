@@ -14,6 +14,11 @@ As a group, we began a list of [Science of Music Resources](https://docs.google.
 
 ## Select Photos From Throughout The Day
 Check our Twitter, Instagram, and Facebook feeds, or search the combined hashtags #Science #MusicHackathon to find the event's social media footprint.
+![Marta Olko speaks into a mic in front of a crowded room.]({{"/assets/events/2018/20180203/speaker1.jpg" | absolute_path}})
+
+![Jong Wook gestures while explaining a diagram on the projector behind him.]({{"/assets/events/2018/20180203/speaker2.jpg" | absolute_path}})
+
+![Mark stands behind the podium and speaks into the mic, with slides on the projector screen behind him.]({{"/assets/events/2018/20180203/speaker3.jpg" | absolute_path}})
 
 ![Participants moving ideas around on post-its while standing at the whiteboard during the brainstorming session.]({{"/assets/events/2018/20180203/brainstorm.jpg" | absolute_path}})
 
