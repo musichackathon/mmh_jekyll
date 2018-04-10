@@ -16,3 +16,5 @@ As a group, we began a list of [Science of Music Resources](https://docs.google.
 Check our Twitter, Instagram, and Facebook feeds, or search the combined hashtags #Science #MusicHackathon to find the event's social media footprint.
 
 ![Participants moving ideas around on post-its while standing at the whiteboard during the brainstorming session.]({{"/assets/events/2018/20180203/brainstorm.jpg" | absolute_path}})
+
+![Participants cluster around a table, many on laptops, concentrating on projects.]({{"/assets/events/2018/20180203/hacking.jpg" | absolute_path}})
