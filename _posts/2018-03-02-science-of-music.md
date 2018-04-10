@@ -17,3 +17,4 @@ Check our Twitter, Instagram, and Facebook feeds, or search the combined hashtag
 <!--
 ![The crowd trickling in, sitting at tables, facing the screens]({{ "/assets/events/20171209/crowd.jpg" | absolute_path}})
 -->
+![Participants moving ideas around on post-its while standing at the whiteboard during the brainstorming session.]({{"assets/events/2018/20180203/brainstorm.jpg" | absolute_path}})
